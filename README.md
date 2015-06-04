@@ -56,7 +56,10 @@ Now you can edit the template freely, and push up changes as you need.
 
 ### Staging version
 
-TODO(mbland): Document the staging aspect of pages.18f.gov.
+You can create an `18f-pages-staging` branch and changes to that branch will
+be published to `https://pages.18f.gov/staging/MY-NEW-GUIDE`.
+
+TODO(mbland): Finish
 
 ### Public domain
 
