@@ -54,6 +54,10 @@ git push origin 18f-pages
 
 Now you can edit the template freely, and push up changes as you need. 
 
+### Staging version
+
+TODO(mbland): Document the staging aspect of pages.18f.gov.
+
 ### Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
