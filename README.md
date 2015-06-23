@@ -42,17 +42,23 @@ instructions on how to adapt the template to a new guide repository.
 After going through these steps, run `./go` to see a list of available
 commands. The `serve` command is the most common for routine development.
 
-You'll need to create a new Github repository for your new guide. To do this, go to github.com/18f and click the "New Repository" button. Enter the title and description for your new guide and then click "Create Repository".
+You'll need to create a new Github repository for your new guide.
 
-After the repository is created, you'll see the repo URL at the top. Copy this url by hitting the handy "Copy to Clipboard" button next to the text box. 
+1. To do this, [create a new repository](https://github.com/organizations/18F/repositories/new).
+    1. Enter the title and description.
+    1. Click "Create Repository".
+1. You'll see the repo URL at the top. Copy this url by hitting the handy "Copy to Clipboard" button next to the text box.
+1. Go back to the directory where you cloned the `guides-template` repository. We're going to change this repo to point to the one you just created (which is empty) and push the template to it.
 
-Go back to the directory where you cloned the guides-template repository. We're going to change this repo to point to the one you just created (which is empty) and push the template to it.
-```
-git remote set-url origin https://github.com/18F/MY-NEW-GUIDE.git
-git push origin 18f-pages
-```
+    ```bash
+    git remote set-url origin https://github.com/18F/MY-NEW-GUIDE.git
+    git push origin 18f-pages
+    ```
 
-Now you can edit the template freely, and push up changes as you need. 
+1. [Follow these instructions](https://github.com/18f/pages#adding-a-new-site) to publish the site. You're encouraged to do this sooner than later!
+1. Display the live URL on the repository by going to the repository homepage and clicking "Edit" near the top.
+
+Now you can edit the template freely, and push up changes as you need.
 
 ### Public domain
 
