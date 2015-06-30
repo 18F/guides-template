@@ -10,6 +10,7 @@ exclude:
 - LICENSE.md
 
 permalink: pretty
+highlighter: rouge
 
 # Author/Organization info to be displayed in the templates
 author:
