@@ -54,6 +54,13 @@ git push origin 18f-pages
 
 Now you can edit the template freely, and push up changes as you need. 
 
+### Staging version
+
+You can create an `18f-pages-staging` branch and changes to that branch will
+be published to `https://pages.18f.gov/staging/MY-NEW-GUIDE`.
+
+TODO(mbland): Finish
+
 ### Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
