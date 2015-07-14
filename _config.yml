@@ -30,6 +30,10 @@ navigation:
 - text: Adding a New Page
   url: adding-a-new-page/
   internal: true
+  children:
+    - text: Making a Child Page
+      url: making-a-child-page/
+      internal: true   
 - text: Adding Images
   url: adding-images/
   internal: true

@@ -1,7 +1,7 @@
 ---
 permalink: /adding-a-new-page/
 layout: default
-title: Adding a new page
+title: Adding a New Page
 ---
 To add new pages to the guide, first create a new
 [Markdown](http://daringfireball.net/projects/markdown/syntax) file in the

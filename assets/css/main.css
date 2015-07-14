@@ -174,36 +174,136 @@ Navigation
   padding: 10px;
   -webkit-transition: .4s;
   transition: .4s;
+  width: 80%;
+  float: left;
 }
+
 .sidebar-nav a,
 .sidebar-nav a:link,
 .sidebar-nav a:visited {
   border-bottom: none;
   color: #74767B;
 }
-.sidebar-nav li:hover,
+
+.sidebar-nav a:hover,
 .sidebar-nav a:focus,
-.sidebar-nav li:active,
-.sidebar-nav .sidebar-nav-active {
+.sidebar-nav a:active,
+.sidebar-nav .sidebar-nav-active > a {
   color: #74767B;
   border-left: 4px solid {{ site.brand_color }};
   background-color: transparent;
-  padding-left: 0;
+  padding-left: 20px;
 }
+
 .sidebar-nav ul {
   margin: 0;
   padding: 0;
 }
+
 .sidebar-nav li {
   list-style: none;
   border-bottom: 1px solid #babbbd;
   font-size: 1.125em;
   padding-left: 4px;
+  overflow: hidden;
 }
+
 .sidebar-nav li:last-child {
   border-bottom: none;
 }
 
+.nav-children {
+    clear: both;
+    display: block;
+    font-size: 14px;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: max-height .2s, opacity .2s;
+    -moz-transition: max-height .2s, opacity .2s;
+    -o-transition: max-height .2s, opacity .2s;
+    transition: max-height .2s, opacity .2s;
+}
+
+.nav-children li {
+    border-bottom: none;
+}
+
+.nav-children a {
+    padding: 5px 5px 5px 20px;
+}
+
+.nav-children li:last-child a {
+    padding-bottom: 10px;
+}
+
+.nav-children a:hover,
+.nav-children a:focus,
+.nav-children a:active {
+    padding-left: 40px;
+}
+
+.expand-subnav {
+    background: none;
+    border: none;
+    border-radius: 24px;
+    color: #0072ce;
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 24px;
+    margin: 12px;
+    position: relative;
+    width: 24px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;    
+}
+
+.expand-subnav:before {
+    content: "+";
+    display: block;
+    font-size: 20px;
+    left: 6px;
+    line-height: 1;
+    position: absolute;
+    top: 0px;
+    -webkit-transition: transform .2s, left .2s;
+    -moz-transition: transform .2s, left .2s;
+    -o-transition: transform .2s, left .2s;
+    transition: transform .2s, left .2s;    
+}
+
+.expand-subnav:focus {
+    background: #0072ce;
+    color: #fff;
+    outline: none;
+}
+
+.expand-subnav:checked:before {
+    left: 7px;
+    -webkit-tranform: rotate3d(0, 0, 1, 45deg);
+    -moz-transform: rotate3d(0, 0, 1, 45deg);
+    -o-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transition: transform .2s, left .2s;
+    -moz-transition: transform .2s, left .2s;
+    -o-transition: transform .2s, left .2s;
+    transition: transform .2s, left .2s;
+}
+
+/* Show the menu when the checkbox is checked */
+.expand-subnav:checked + .nav-children {
+    display: block;
+    max-height: 400px;
+    opacity: 1;
+    -webkit-transition: max-height .2s, opacity .2s;
+    -moz-transition: max-height .2s, opacity .2s;
+    -o-transition: max-height .2s, opacity .2s;    
+    transition: max-height .2s, opacity .2s;
+}
 
 /*
 Layout
