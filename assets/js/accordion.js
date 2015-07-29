@@ -6,10 +6,9 @@
 function Accordion($el) {
   var self = this;
   this.$root = $el;
-  this.expanded = $el.find('[aria-hidden=false]').attr('id');
   this.$root.on('click', 'button', function(ev) {
     ev.preventDefault();
-    if ( $(this).attr('aria-controls') === self.expanded ) {
+    if ( $(this).attr('aria-expanded') === 'true' ) {
       self.hide($(this));
     } else {
       self.show($(this));
@@ -25,7 +24,6 @@ Accordion.prototype.$ = function(selector) {
 Accordion.prototype.hide = function($button) {
   var selector = $button.attr('aria-controls'),
       $content = this.$('#' + selector);
-  this.expanded = '';
   $button.attr('aria-expanded', false);
   $content.attr('aria-hidden', true);
 };
@@ -33,8 +31,6 @@ Accordion.prototype.hide = function($button) {
 Accordion.prototype.show = function($button) {
   var selector = $button.attr('aria-controls'),
       $content = this.$('#' + selector);
-
-  this.expanded = selector;
   $button.attr('aria-expanded', true);
   $content.attr('aria-hidden', false);
 };
