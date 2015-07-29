@@ -31,19 +31,19 @@ navigation:
   url: adding-a-new-page/
   internal: true
   children:
-    - text: Making a Child Page
-      url: making-a-child-page/
-      internal: true   
-- text: Adding Images
+  - text: Making a Child Page
+    url: making-a-child-page/
+    internal: true
+- text: Adding images
   url: adding-images/
   internal: true
-- text: Updating the Config File
+- text: Updating the config file
   url: updating-the-config-file/
   internal: true
-- text: GitHub Setup
+- text: GitHub setup
   url: github-setup/
   internal: true
-- text: Post Your Guide
+- text: Post your guide
   url: post-your-guide/
   internal: true
 
