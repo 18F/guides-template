@@ -247,55 +247,48 @@ Navigation
 .expand-subnav {
     background: none;
     border: none;
-    border-radius: 24px;
+    border-radius: 30px;
     color: #0072ce;
     cursor: pointer;
     display: block;
     float: right;
-    height: 24px;
-    margin: 12px;
+    font-size: 20px;
+    height: 30px;
+    line-height: 1;
+    margin: 8px;
+    padding-bottom: 5px;
     position: relative;
-    width: 24px;
+    width: 30px;
     -webkit-appearance: none;
     -moz-appearance: none;
     -o-appearance: none;
     appearance: none;    
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    -o-transition: -o-transform .2s;
+    transition: transform .2s;
 }
 
-.expand-subnav:before {
-    content: "+";
-    display: block;
-    font-size: 20px;
-    left: 6px;
-    line-height: 1;
-    position: absolute;
-    top: 0px;
-    -webkit-transition: transform .2s, left .2s;
-    -moz-transition: transform .2s, left .2s;
-    -o-transition: transform .2s, left .2s;
-    transition: transform .2s, left .2s;    
-}
-
+.expand-subnav:hover,
 .expand-subnav:focus {
-    background: #0072ce;
+    background-color: #0072ce;
     color: #fff;
     outline: none;
 }
 
-.expand-subnav:checked:before {
-    left: 7px;
-    -webkit-tranform: rotate3d(0, 0, 1, 45deg);
-    -moz-transform: rotate3d(0, 0, 1, 45deg);
-    -o-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
-    -webkit-transition: transform .2s, left .2s;
-    -moz-transition: transform .2s, left .2s;
-    -o-transition: transform .2s, left .2s;
-    transition: transform .2s, left .2s;
+.expand-subnav[aria-expanded=true] {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
-/* Show the menu when the checkbox is checked */
-.expand-subnav:checked + .nav-children {
+
+.nav-children[aria-hidden=true] {
+    max-height: 0;
+}
+
+.nav-children {
     display: block;
     max-height: 400px;
     opacity: 1;
