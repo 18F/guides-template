@@ -5,40 +5,22 @@
     <ul>
       {% for link in site.navigation %}
         {% if link.internal == true %}
-          <li class="group {% if page.title == link.text %}sidebar-nav-active{% else if page.parent == link.text %}sidebar-parent-active{% endif %}">
-            <a href="{{ site.baseurl }}/{{ link.url }}"  {% if page.title == link.text %}title='Selected'{% endif %}>{{ link.text }}</a>
+          <li class="group {% if page.title == link.text %}sidebar-nav-active{% endif %}">
+            <a href="{{ site.baseurl }}/{{ link.url }}"  {% if page.title == link.text %}title='Current Page'{% endif %}>{{ link.text }}</a>
             {% if link.children %}
-            <label class="visuallyhidden" for="expand-{{ forloop.index }}">View more</label>
-            <input class="expand-subnav" 
-                    type="checkbox" 
-                    id="expand-{{ forloop.index  }}"
-                    {% if page.title == link.text or page.parent == link.text %}checked{% endif %}>
-              <ul class="nav-children">
+              <button class="expand-subnav"
+                      aria-expanded="{% if link.text == page.parent or link.text == page.title %}true{% else %}false{% endif %}"
+                      aria-controls="nav-collapsible-{{ forloop.index }}">+</button>
+              <ul class="nav-children" id="nav-collapsible-{{ forloop.index }}" 
+                  aria-hidden="{% if link.text == page.parent or link.text == page.title %}false{% else %}true{% endif %}">
                 {% for child in link.children %}
-                  <li {% if page.title == child.text %}class="sidebar-nav-active"{% endif %}>
-                    <a href="{{ site.baseurl }}/{{ link.url}}{{ child.url }}"  {% if page.title == child.text %}title='Selected'{% endif %}>{{ child.text }}</a>
+                  <li class="{% if page.title == child.text %}sidebar-nav-active{% endif %}">
+                    <a href="{{ site.baseurl }}/{{ link.url}}{{ child.url }}"  
+                      title="{% if page.title == child.text %}Current Page{% endif %}">{{ child.text }}</a>
                   </li>
                 {% endfor %}
               </ul>
             {% endif %}
-          </li>
-        {% else %}
-          <li class="group {% if page.title == link.text %}sidebar-nav-active{% endif %}">
-            <a href="{{ link.url }}" {% if page.title == link.text %}title='Selected'{% endif %}>{{ link.text }}</a>
-            {% if link.children %}
-            <label class="visuallyhidden" for="expand-{{ forloop.index }}">View more</label>
-            <input class="expand-subnav" 
-                    type="checkbox" 
-                    id="expand-{{ forloop.index  }}"
-                    {% if page.title == link.text or page.parent == link.text %}checked{% endif %}>
-              <ul class="nav-children">
-                {% for child in link.children %}
-                  <li {% if page.title == child.text %}class="sidebar-nav-active"{% endif %}>
-                    <a href="{{ site.baseurl }}/{{ link.url}}{{ child.url }}"  {% if page.title == child.text %}title='Selected'{% endif %}>{{ child.text }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endif %}         
           </li>
         {% endif %}
       {% endfor %}
