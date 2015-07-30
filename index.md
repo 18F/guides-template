@@ -21,18 +21,8 @@ table of contents.
 
 ## Updating an existing guide
 
-First, clone this template:
-
-```
-$ git clone git@github.com:18F/guides-template.git
-```
-
-Run the `copy-template` script from this template, passing the path to your
-guide's repository as the argument (replacing `MY-EXISTING-GUIDE` below):
-
-```
-$ guides-template/copy-template MY-EXISTING-GUIDE
-```
+To apply the latest updates to this template's theme to your guide, run `./go
+update_theme` from the root of your guide's repository.
 
 If your repository already has a `gh-pages` branch, you can create an
 `18f-pages` branch from it by running these commands:

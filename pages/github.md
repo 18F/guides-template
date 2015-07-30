@@ -13,12 +13,12 @@ publish your guide.
 ## <a name="create-local-repo"></a>Create a new local repository
 
 Once you've got the `_config.yml` file up-to-date, in the root directory of
-your guide's repository, run `_scripts/create-new-repo` to remove all of the
-pages and images that came with this template (make sure you didn't reuse one
+your guide's repository, run `./go create_repo` to remove all of the
+pages and images that came with this template (make sure you didn't reuse any
 of the file names from this template!) and create a new Git repository:
 
 ```
-$ _scripts/create-new-repo
+$ ./go create_repo
 
 Clearing Guides Template files
 Removing old git repository
