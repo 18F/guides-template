@@ -3,7 +3,6 @@ markdown: redcarpet
 name: 18F Guides Template
 exclude:
 - go
-- copy-template
 - Gemfile
 - Gemfile.lock
 - README.md
@@ -27,11 +26,11 @@ navigation:
 - text: Introduction
   url: index.html
   internal: true
-- text: Adding a New Page
+- text: Adding a new page
   url: adding-a-new-page/
   internal: true
   children:
-  - text: Making a Child Page
+  - text: Making a child page
     url: making-a-child-page/
     internal: true
 - text: Adding images

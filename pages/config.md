@@ -44,20 +44,30 @@ directory:
 
 ```yaml
 exclude:
-{% for i in site.exclude %}{% if i != 'copy-template' %}- {{ i }}
-{% endif %}{% endfor %}```
+{% for i in site.exclude %}- {{ i }}
+{% endfor %}```
 
 ## <a name="register-new-pages"></a>Register new pages
 
 The `navigation:` list is used to generate the table of contents. Add a new
-entry for any new page added. For example, the `navigation:` section of this
-guide contains:
+entry for any new page added.
+
+You can run `_scripts/update-config.rb` to do this automatically (and run it
+again whenever you add pages or make `title:`, `permalink:`, or `parent:`
+changes), but you may want to edit the results by hand to produce the desired
+ordering of pages.
+
+For example, the `navigation:` section of this guide contains:
 
 ```yaml
 navigation:
 {% for i in site.navigation %}- text: {{ i.text }}
   url: {{ i.url }}
-  internal: {{ i.internal }}
+  internal: {{ i.internal }}{% if i.children %}
+  children:{% for child in i.children %}
+  - text: {{ child.text }}
+    url: {{ child.url }}
+    internal: {{ child.internal }}{% endfor %}{% endif %}
 {% endfor %}```
 
 ## <a name="update-repository-list"></a>Update the repository list
