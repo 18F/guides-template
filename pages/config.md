@@ -52,10 +52,10 @@ exclude:
 The `navigation:` list is used to generate the table of contents. Add a new
 entry for any new page added.
 
-You can run `_scripts/update-config.rb` to do this automatically (and run it
-again whenever you add pages or make `title:`, `permalink:`, or `parent:`
-changes), but you may want to edit the results by hand to produce the desired
-ordering of pages.
+You can run `./go update_nav` from the root directory to do this automatically
+(and run it again whenever you add pages or make `title:`, `permalink:`, or
+`parent:` changes), but you may want to edit the results by hand to produce
+the desired ordering of pages.
 
 For example, the `navigation:` section of this guide contains:
 
