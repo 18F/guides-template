@@ -13,24 +13,23 @@ publish your guide.
 ## <a name="create-local-repo"></a>Create a new local repository
 
 Once you've got the `_config.yml` file up-to-date, in the root directory of
-your guide's repository, copy and paste these commands to remove all of the
-pages and images that came with this template (be careful not to remove any files
-that you actually intend to keep):
+your guide's repository, run `_scripts/create-new-repo` to remove all of the
+pages and images that came with this template (make sure you didn't reuse one
+of the file names from this template!) and create a new Git repository:
 
 ```
-$ rm copy-template {% for p in site.pages %}{% if p.path contains 'pages/' %}{{ p.path }} {% endif %}{% endfor %}
-$ rm {% for f in site.static_files %}{% if f.path contains '/images/' %}{{ f.path | replace_first:'/','' }} {% endif %}{% endfor %}
+$ _scripts/create-new-repo
+
+Clearing Guides Template files
+Removing old git repository
+Creating a new git repository
+Initialized empty Git repository in .../.git/
+Adding files for initial commit
+All done! Run 'git commit' to create your first commit.
 ```
 
-Then execute the following to detach from the the original template repository
-and create a new one for your guide:
-
-```
-$ rm -rf .git
-$ git init
-$ git add .
-$ git commit -m 'Initial commit'
-```
+Then execute `git commit -m 'Initial commit'` to create your new Guide!
+(Unless you're Git savvy and would like to tweak things a bit first.)
 
 ## <a name="create-18f-repo"></a>Create a new 18F GitHub repository
 
