@@ -21,9 +21,8 @@ table of contents.
 
 ## Updating an existing guide
 
-To automatically download the latest changes from this template and apply them
-to your guide, run `./go update_theme` from the root of your guide's
-repository.
+To apply the latest updates to this template's theme to your guide, run `./go
+update_theme` from the root of your guide's repository.
 
 If your repository already has a `gh-pages` branch, you can create an
 `18f-pages` branch from it by running these commands:
