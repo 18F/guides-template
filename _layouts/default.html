@@ -11,7 +11,7 @@
 
         <div class="wrap">
           {% if site.logourl != null %}
-            <img class="logo" src="{{ site.baseurl }}{{ site.logourl }}" alt="{{ site.logoalt }}" width="75px">
+            <a href="{{ site.author.url }}"><img class="logo" src="{{ site.baseurl }}{{ site.logourl }}" alt="{{ site.logoalt }}" width="75px"></a>
           {% endif %}
           <h1 class="site-title"><a class="title-link" href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
         </div>
@@ -19,10 +19,10 @@
       </header>
 
       <div class="wrap content">
-
         {% include sidebar.html %}
 
         <section id="main" class="main-content" role="main">
+          <div class="to-guides"><a href="https://pages.18f.gov/guides/">&laquo; back to 18F Guides</a></div>
           <h1>{{ page.title }}</h1>
           {{ content }}
         </section>
