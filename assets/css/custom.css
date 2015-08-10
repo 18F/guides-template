@@ -40,10 +40,6 @@ li.active > a{
 	background-color: #317ab9;
 }
 
-@media screen and (min-width: 45em) and (min-height: 32.5em) {
-  div.to-guides {
-    float: right;
-    display: block;
-    text-align: right;
-  }
+div.to-guides {
+	display: block;
 }
