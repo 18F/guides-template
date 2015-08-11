@@ -42,4 +42,9 @@ li.active > a{
 
 div.to-guides {
 	display: block;
+  padding-top: .5em;
+}
+
+header {
+  padding-bottom: 1.5em;
 }
