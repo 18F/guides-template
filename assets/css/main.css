@@ -171,7 +171,10 @@ Navigation
 
 .sidebar-nav a {
   display: block;
-  padding: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 14px;
+  padding-top: 10px;
   -webkit-transition: .4s;
   transition: .4s;
   width: 80%;
