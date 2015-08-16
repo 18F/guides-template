@@ -1,6 +1,5 @@
 ---
 permalink: /adding-a-new-page/
-layout: default
 title: Adding a new page
 ---
 To add new pages to the guide, first create a new

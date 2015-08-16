@@ -1,6 +1,5 @@
 ---
 permalink: /post-your-guide/
-layout: default
 title: Post your guide
 ---
 - [Create the `18f-pages` branch](#create-18f-pages-branch)

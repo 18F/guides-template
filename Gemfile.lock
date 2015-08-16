@@ -1,3 +1,11 @@
+PATH
+  remote: ../guides-style
+  specs:
+    guides_style_18f (0.0.0)
+      jekyll (~> 2.5)
+      rouge (~> 1.9)
+      sass (~> 3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,6 +76,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  guides_style_18f!
   jekyll
   rouge
 

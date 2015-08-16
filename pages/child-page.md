@@ -1,6 +1,5 @@
 ---
 permalink: /adding-a-new-page/making-a-child-page/
-layout: default
 title: Making a child page
 parent: Adding a new page
 ---

@@ -1,6 +1,5 @@
 ---
 permalink: /
-layout: default
 title: Introduction
 ---
 This is the template used for the [Jekyll](http://jekyllrb.com/)-based [18F
