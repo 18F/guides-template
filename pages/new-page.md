@@ -14,7 +14,6 @@ matter](http://jekyllrb.com/docs/frontmatter/):
 ```yaml
 ---
 permalink: {{ page.permalink }}
-layout: {{ page.layout }}
 title: {{ page.title }}
 ---
 ```
