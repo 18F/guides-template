@@ -9,7 +9,6 @@ If you want to nest a page under a parent page, follow the instructions to [add 
 ```yaml
 ---
 permalink: /adding-a-new-page/making-a-child-page/
-layout: default
 title: Making a Child Page
 parent: Adding a New Page
 ---
