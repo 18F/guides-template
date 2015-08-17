@@ -1,4 +1,9 @@
 baseurl: /guides-template
+
+# To use the shared 18F Guides styles when deploying to pages.18f.gov,
+# uncomment the following:
+#asset_root: /guides-template
+
 markdown: redcarpet
 name: 18F Guides Template
 exclude:
@@ -10,6 +15,9 @@ exclude:
 
 permalink: pretty
 highlighter: rouge
+
+sass:
+  style: :compressed
 
 # Author/Organization info to be displayed in the templates
 author:
@@ -51,7 +59,15 @@ repos:
   description: Main repository
   url: https://github.com/18F/guides-template
 
-# Style Variables
-brand_color: "#1188ff"
+back_link:
+  url: "https://pages.18f.gov/guides/"
+  text: Read more 18F Guides
 
 google_analytics_ua: UA-48605964-19
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "guides_style_18f_default"

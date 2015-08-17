@@ -1,6 +1,5 @@
 ---
 permalink: /github-setup/
-layout: default
 title: GitHub setup
 ---
 - [Create a new local repository](#create-local-repo)

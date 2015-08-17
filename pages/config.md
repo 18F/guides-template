@@ -1,9 +1,9 @@
 ---
 permalink: /updating-the-config-file/
-layout: default
 title: Updating the config file
 ---
 - [Set the base URL and guide name](#set-baseurl-and-name)
+- [Set the `asset_root:`](#set-asset-root)
 - [Copy the `exclude:` entries](#copy-exclude-entries)
 - [Register new pages](#register-new-pages)
 - [Update the repository list](#update-repository-list)
@@ -35,6 +35,14 @@ it automatically.
 The URLs of the individual section pages are relative to the `baseurl:`. For
 example, the `permalink:` of this page is `{{page.permalink}}`. The full local
 URL is `http://localhost:4000{{site.baseurl}}{{page.permalink}}`.
+
+## <a name="set-asset-root"></a>Set the `asset_root:`
+
+If you define `asset_root: /guides-template` in your `_config.yml`, your
+published Guide will automatically receive style updates when they are pushed
+to this web site. Otherwise, the styles for your published document will not
+change until you update your version of the [`guides_style_18f`
+gem](https://github.com/18F/guides-style).
 
 ## <a name="copy-exclude-entries"></a>Copy the `exclude:` entries
 

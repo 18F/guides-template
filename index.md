@@ -1,6 +1,5 @@
 ---
 permalink: /
-layout: default
 title: Introduction
 ---
 This is the template used for the [Jekyll](http://jekyllrb.com/)-based [18F
@@ -21,8 +20,12 @@ table of contents.
 
 ## Updating an existing guide
 
-To apply the latest updates to this template's theme to your guide, run `./go
-update_theme` from the root of your guide's repository.
+Add the [`guides_style_18f` gem](https://github.com/18F/guides-style) to your
+Guide's `Gemfile`. Also consider [setting the `asset_root:` configuration
+option]({{ site.baseurl }}/updating-the-config-file#set-asset-root).
+
+To receive layout updates, as well as any new styles or scripts associated
+with them, you will need to run `./go update_theme`.
 
 If your repository already has a `gh-pages` branch, you can create an
 `18f-pages` branch from it by running these commands:
