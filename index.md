@@ -21,11 +21,13 @@ table of contents.
 ## Updating an existing guide
 
 Add the [`guides_style_18f` gem](https://github.com/18F/guides-style) to your
-Guide's `Gemfile`. Also consider [setting the `asset_root:` configuration
-option]({{ site.baseurl }}/updating-the-config-file#set-asset-root).
+Guide's `Gemfile` if it's not already present. You may also wish to copy the
+`./go` script from the template if your guide doesn't already have one.
 
 To receive layout updates, as well as any new styles or scripts associated
-with them, you will need to run `./go update_theme`.
+with them, you will need to run `./go update_theme`. (Or, if you aren't using
+a `./go` script, you can run `bundle update --source guides_style_18f`
+manually.)
 
 If your repository already has a `gh-pages` branch, you can create an
 `18f-pages` branch from it by running these commands:

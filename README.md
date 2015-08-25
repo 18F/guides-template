@@ -28,38 +28,47 @@ of your new repository:
 ```shell
 $ git clone git@github.com:18F/guides-template.git MY-NEW-GUIDE
 $ cd MY-NEW-GUIDE
-$ ./go init
 $ ./go serve
 ```
 
 This will check that your Ruby version is supported, install the [Bundler
 gem](http://bundler.io/) if it is not yet installed, install all the gems
 needed by the template, and launch a running instance on
-`http://localhost:4000/guides-template/`. (Make sure to include the trailing slash! The built-in
-Jekyll webserver doesn't redirect to it.) That page contains further
-instructions on how to adapt the template to a new guide repository.
+`http://localhost:4000/`. (If you add a `baseurl:` setting to your
+`_config.yml`, make sure to include the trailing slash on the resulting home
+URL!  The built-in Jekyll webserver doesn't redirect to it.) That page
+contains further instructions on how to adapt the template to a new guide
+repository.
 
 After going through these steps, run `./go` to see a list of available
 commands. The `serve` command is the most common for routine development.
 
-You'll need to create a new Github repository for your new guide. To do this, go to github.com/18f and click the "New Repository" button. Enter the title and description for your new guide and then click "Create Repository".
+### Shortcut: GitHub repository setup
+
+You'll need to create a new Github repository for your new guide. This is
+explained in the [GitHub setup chapter of the
+template](https://pages.18f.gov/guides-template/github-setup/), but if you're
+already comfortable with creating GitHub repositories, feel free to jump ahead
+with the instructions outlined here.
+
+Go to github.com/18f and click the "New Repository" button. Enter the title and description for your new guide and then click "Create Repository".
 
 After the repository is created, you'll see the repo URL at the top. Copy this url by hitting the handy "Copy to Clipboard" button next to the text box. 
 
 Go back to the directory where you cloned the guides-template repository. We're going to change this repo to point to the one you just created (which is empty) and push the template to it.
-```
-git remote set-url origin https://github.com/18F/MY-NEW-GUIDE.git
-git push origin 18f-pages
+
+```shell
+$ git remote add origin git@github.com:18F/MY-NEW-GUIDE.git
+$ git push origin 18f-pages
 ```
 
 Now you can edit the template freely, and push up changes as you need. 
 
-### Staging version
+### Staging version (for 18F team members)
 
 You can create an `18f-pages-staging` branch and changes to that branch will
-be published to `https://pages.18f.gov/staging/MY-NEW-GUIDE`.
-
-TODO(mbland): Finish
+be published to `https://pages-staging.18f.gov/MY-NEW-GUIDE`, which is
+identical to `https://pages.18f.gov/` but provides authenticated access.
 
 ### Public domain
 

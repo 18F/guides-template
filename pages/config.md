@@ -2,8 +2,7 @@
 permalink: /updating-the-config-file/
 title: Updating the config file
 ---
-- [Set the base URL and guide name](#set-baseurl-and-name)
-- [Set the `asset_root:`](#set-asset-root)
+- [Set the guide name](#set-name)
 - [Copy the `exclude:` entries](#copy-exclude-entries)
 - [Register new pages](#register-new-pages)
 - [Update the repository list](#update-repository-list)
@@ -12,37 +11,31 @@ title: Updating the config file
 Once you're finished updating the config file, click the _GitHub Setup_
 entry in the table of contents.
 
-## <a name="set-baseurl-and-name"></a>Set the base URL and guide name
+## <a name="set-name"></a>Set the guide name
 
-The configuration file is called `_config.yml`. The first properties to update
-are `baseurl:`, which determines the top-level URL of your guide relative to
-the host; and `name:`, which appears as the guide's overall title. Make sure to
-set `baseurl:` to the name of your new guide's repository; this is important
-to ensure that it will be published correctly.
+The configuration file is called `_config.yml`. Update the `name:` property,
+which appears as the guide's overall title. You may also set the `baseurl:`
+property, which affects the root URL of your guide when served locally on your
+machine. When published on [18F Pages](https://pages.18f.gov/), the `baseurl:`
+is set automatically to the name of your repository, so you don't have to set
+it yourself.
 
 For example, for this template, these values are set to:
 
 ```yaml
-baseurl: {{site.baseurl}}
 name: {{site.name}}
+baseurl: {{site.baseurl}}
 ```
 
 When run locally, the URL for this guide is
 `http://localhost:4000{{site.baseurl}}/`. **Remember to include the trailing
-`/` when serving locally!** The Jekyll built-in webserver doesn't redirect to
-it automatically.
+`/` when serving locally** if you change the `baseurl:` property in the
+`_config.yml` file. The Jekyll built-in webserver doesn't redirect to it
+automatically.
 
 The URLs of the individual section pages are relative to the `baseurl:`. For
 example, the `permalink:` of this page is `{{page.permalink}}`. The full local
 URL is `http://localhost:4000{{site.baseurl}}{{page.permalink}}`.
-
-## <a name="set-asset-root"></a>Set the `asset_root:`
-
-If you define `asset_root: /guides-template` in your `_config.yml`, your
-published Guide will automatically receive style updates when they are pushed
-to this web site. Otherwise, the styles for your published document will not
-change until you update your version of the [`guides_style_18f`
-gem](https://github.com/18F/guides-style).
 
 ## <a name="copy-exclude-entries"></a>Copy the `exclude:` entries
 

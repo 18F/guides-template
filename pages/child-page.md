@@ -4,13 +4,13 @@ title: Making a child page
 parent: Adding a new page
 ---
 
-If you want to nest a page under a parent page, follow the instructions to [add a new page](/adding-a-new-page/) with two additions to the YAML front matter. Here is the front-matter for this page:
+If you want to nest a page under a parent page, follow the instructions to [add a new page]({{ site.baseurl }}/adding-a-new-page/) with two additions to the YAML front matter. Here is the front-matter for this page:
 
 ```yaml
 ---
-permalink: /adding-a-new-page/making-a-child-page/
-title: Making a Child Page
-parent: Adding a New Page
+permalink: {{ page.permalink }}
+title: {{ page.title }}
+parent: {{ page.parent }}
 ---
 ```
 
@@ -31,3 +31,6 @@ navigation:
       url: making-a-child-page/
       internal: true
 ```
+
+Now click on the _Adding images_ entry in the table of contents to learn how
+to add images to your guide.

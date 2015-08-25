@@ -22,5 +22,6 @@ title: {{ page.title }}
 the page is generated as `{{ page.permalink }}index.html`. Without it, it would
 be generated as `{{ page.permalink | remove_first: '/' | replace:'/','.'}}html`.
 
-Now click on the _Adding Images_ entry in the table of contents to learn how
-to add images to your guide.
+Click on the _Adding images_ entry in the table of contents to learn how
+to add images to your guide, or click on _Making a child page_ to see how to
+make chapters appear as children of related chapters.
