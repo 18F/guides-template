@@ -12,12 +12,12 @@ module GuidesTemplate
     config_path = File.join basedir, '_config.yml'
     config_data = SafeYAML.load_file config_path, safe: true
     nav_data = config_data['navigation']
-    update_navigation_data nav_data, pages_front_matter_by_title
+    update_navigation_data nav_data, pages_front_matter_by_title(basedir)
     write_navigation_data_to_config_file config_path, nav_data
   end
 
-  def self.pages_front_matter_by_title
-    Dir[File.join BASEDIR, 'pages', '**', '*.md'].map do |f|
+  def self.pages_front_matter_by_title(basedir)
+    Dir[File.join basedir, 'pages', '**', '*.md'].map do |f|
       front_matter = SafeYAML.load_file f, safe: true
       [front_matter['title'], front_matter]
     end.to_h
