@@ -45,13 +45,13 @@ commands. The `serve` command is the most common for routine development.
 
 ### Shortcut: GitHub repository setup
 
-You'll need to create a new Github repository for your new guide. This is
+You'll need to create a new GitHub repository for your new guide. This is
 explained in the [GitHub setup chapter of the
 template](https://pages.18f.gov/guides-template/github-setup/), but if you're
 already comfortable with creating GitHub repositories, feel free to jump ahead
 with the instructions outlined here.
 
-Go to github.com/18f and click the "New Repository" button. Enter the title and description for your new guide and then click "Create Repository".
+Go to github.com/18f and click the "New Repository" button. Enter the title and description for your new guide and then click "Create Repository."
 
 After the repository is created, you'll see the repo URL at the top. Copy this url by hitting the handy "Copy to Clipboard" button next to the text box. 
 
