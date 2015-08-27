@@ -23,22 +23,20 @@ rescue LoadError
   try_command_and_restart 'gem install go_script'
 end
 
+require 'guides_style_18f'
+
 extend GoScript
 check_ruby_version '2.1.5'
-
-require_relative '_go/navigation'
-require_relative '_go/repository'
 
 command_group :dev, 'Development commands'
 
 def_command(
   :create_repo, 'Remove template files and create a new Git repository') do
-  GuidesTemplate.remove_template_files Dir.pwd
-  GuidesTemplate.create_new_git_repository Dir.pwd
+  GuidesStyle18F.clear_template_files_and_create_new_repository Dir.pwd
 end
 
 def_command :update_nav, 'Update the \'navigation:\' data in _config.yml' do
-  GuidesTemplate.update_navigation_configuration Dir.pwd
+  GuidesStyle18F.update_navigation_configuration Dir.pwd
 end
 
 def_command :update_theme, 'Update the guides_style_18f gem' do
