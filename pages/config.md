@@ -14,28 +14,11 @@ entry in the table of contents.
 ## <a name="set-name"></a>Set the guide name
 
 The configuration file is called `_config.yml`. Update the `name:` property,
-which appears as the guide's overall title. You may also set the `baseurl:`
-property, which affects the root URL of your guide when served locally on your
-machine. When published on [18F Pages](https://pages.18f.gov/), the `baseurl:`
-is set automatically to the name of your repository, so you don't have to set
-it yourself.
-
-For example, for this template, these values are set to:
+which appears as the guide's overall title. For example:
 
 ```yaml
 name: {{site.name}}
-baseurl: {{site.baseurl}}
 ```
-
-When run locally, the URL for this guide is
-`http://localhost:4000{{site.baseurl}}/`. **Remember to include the trailing
-`/` when serving locally** if you change the `baseurl:` property in the
-`_config.yml` file. The Jekyll built-in webserver doesn't redirect to it
-automatically.
-
-The URLs of the individual section pages are relative to the `baseurl:`. For
-example, the `permalink:` of this page is `{{page.permalink}}`. The full local
-URL is `http://localhost:4000{{site.baseurl}}{{page.permalink}}`.
 
 ## <a name="copy-exclude-entries"></a>Copy the `exclude:` entries
 
@@ -50,15 +33,8 @@ exclude:
 
 ## <a name="register-new-pages"></a>Register new pages
 
-The `navigation:` list is used to generate the table of contents. Add a new
-entry for any new page added.
-
-You can run `./go update_nav` from the root directory to do this automatically
-(and run it again whenever you add pages or make `title:`, `permalink:`, or
-`parent:` changes), but you may want to edit the results by hand to produce
-the desired ordering of pages.
-
-For example, the `navigation:` section of this guide contains:
+The `navigation:` list is used to generate the table of contents. For example,
+the `navigation:` section of this guide contains:
 
 ```yaml
 navigation:
@@ -70,6 +46,12 @@ navigation:
     url: {{ child.url }}
     internal: {{ child.internal }}{% endfor %}{% endif %}
 {% endfor %}```
+
+Run `./go update_nav` from the root directory to update this list
+automatically whenever you add pages or make `title:`, `permalink:`, or
+`parent:` changes. After running the script, you may want to edit the results
+by hand to produce the desired ordering of any new pages; the order of
+existing entries will remain the same.
 
 ## <a name="update-repository-list"></a>Update the repository list
 

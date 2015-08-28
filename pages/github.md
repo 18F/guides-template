@@ -5,9 +5,9 @@ title: GitHub setup
 - [Create a new local repository](#create-local-repo)
 - [Create a new 18F GitHub repository](#create-18f-repo)
 
-Once you've finished the steps below to push to your new 18F guide repo on GitHub, click the
-_Post Your Guide_ entry in the table of contents for the final steps to
-publish your guide.
+Once you've finished the steps below to create your new 18F guide repo and
+push it to GitHub, click the _Post Your Guide_ entry in the table of contents
+for the final steps to publish your guide.
 
 ## <a name="create-local-repo"></a>Create a new local repository
 
@@ -19,11 +19,14 @@ of the file names from this template!) and create a new Git repository:
 ```
 $ ./go create_repo
 
-Clearing Guides Template files
-Removing old git repository
-Creating a new git repository
-Initialized empty Git repository in .../.git/
-Adding files for initial commit
+Clearing Guides Template files.
+Removing `:create_repo` command from the `./go` script.
+Removing old git repository.
+Creating a new git repository.
+Initialized empty Git repository in .../MY-NEW-GUIDE/.git/
+Creating 18f-pages branch.
+Switched to a new branch '18f-pages'
+Adding files for initial commit.
 All done! Run 'git commit' to create your first commit.
 ```
 
@@ -47,7 +50,7 @@ guide's repository:
 
 ```
 $ git remote add origin git@github.com:18F/MY-NEW-GUIDE.git
-$ git push -u origin master
+$ git push -u origin 18f-pages
 ```
 
 Note that you can update the description and add a website link to the
