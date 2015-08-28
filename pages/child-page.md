@@ -21,5 +21,7 @@ be visible in the menu. (You will need to
 before the changes to the menu will appear, as explained in the _Updating the
 config file_ chapter.)
 
+## Next steps
+
 Now click on the _Adding images_ entry in the table of contents to learn how
 to add images to your guide.

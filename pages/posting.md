@@ -2,6 +2,9 @@
 permalink: /post-your-guide/
 title: Post your guide
 ---
+Work your way through these steps to set up automated publishing to [18F
+Pages](https://pages.18f.gov/) for your new guide:
+
 - [Create the `18f-pages` branch](#create-18f-pages-branch)
 - [Set the default branch](#set-default-branch)
 - [Create the publishing webhook](#set-webhook)
@@ -10,9 +13,9 @@ title: Post your guide
 
 ## <a name="create-18f-pages-branch"></a>Create the `18f-pages` branch
 
-If you ran the `./go create_repo` command from the _GitHub setup_ chapter, you
-can skip ahead to the [Create the publishing webhook](#set-webhook) section.
-Otherwise, keep reading.
+**If you ran the `./go create_repo` command from the _GitHub setup_ chapter,
+you can skip ahead to the [Create the publishing webhook](#set-webhook)
+section.  Otherwise, keep reading.**
 
 In order to publish your guide automatically to `pages.18f.gov`, you will need
 to create an `18f-pages` branch. You can do this using the GitHub interface by
@@ -51,7 +54,7 @@ blank, and click **Update webhook**:
 
 With the webhook in place, push any update to your `18f-pages` branch to your
 GitHub repository. Within seconds, your guide should appear at
-`https://pages.18f.gov/$REPO-NAME`. Your guide is now live!
+`https://pages.18f.gov/MY-NEW-GUIDE`. Your guide is now live!
 
 ## <a name="add-new-guide"></a>Add the new guide to 18F Guides
 

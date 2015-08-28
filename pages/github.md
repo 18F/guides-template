@@ -2,20 +2,23 @@
 permalink: /github-setup/
 title: GitHub setup
 ---
+Work your way through these steps to prepare your GitHub repository:
+
 - [Create a new local repository](#create-local-repo)
 - [Set up SSH access to GitHub](#set-up-ssh)
 - [Create a new 18F GitHub repository](#create-18f-repo)
 
-Once you've finished the steps below to create your new 18F guide repo and
-push it to GitHub, click the _Post Your Guide_ entry in the table of contents
-for the final steps to publish your guide.
-
 ## <a name="create-local-repo"></a>Create a new local repository
 
-Once you've got the `_config.yml` file up-to-date, in the root directory of
-your guide's repository, run `./go create_repo` to remove all of the
-pages and images that came with this template (make sure you didn't reuse any
-of the file names from this template!) and create a new Git repository:
+Once you've got the `_config.yml` file up-to-date, you need detach your new
+guide's history from that of the template. We will do that by replacing the
+original local Git repository your guide inherited from the template with a
+completely new local repository that will not contain the history from the
+template, and will become the starting point for your new GitHub repository.
+
+In the top-level directory, run `./go create_repo` to remove all of the pages
+and images that came with this template (make sure you didn't reuse any of the
+file names from this template!) and create a new Git repository:
 
 ```
 $ ./go create_repo
@@ -49,12 +52,13 @@ repository](https://github.com/organizations/18F/repositories/new). You'll
 want to set the `Public` attribute under the **Team** section and add a
 fitting `Description`.
 
-Do _not_ select **Initialize this repository with a README**. Instead, update
-the `README.md` file in your own local repository as necessary.
+Do _not_ select **Initialize this repository with a README**, **Add
+.gitignore** or **Add a license**. Instead, update the `README.md` file in
+your own local repository as necessary. Your local repository also already has
+`.gitignore` and `LICENSE.md` files.
 
 After submitting the form to create a new repository, you will see GitHub's
-instructions to create a local repository and push your changes up to it. At
-this point, do the following, replacing `MY-NEW-GUIDE` with the name of your
+instructions to create a local repository and push your changes up to it. You can ignore these instructions. Instead, do the following, replacing `MY-NEW-GUIDE` with the name of your
 guide's repository:
 
 ```
@@ -72,3 +76,9 @@ repository after creating it:
 
 <img src="{{site.baseurl}}/images/description.png" alt="Setting the
 description and website of the GitHub repository">
+
+## Next steps
+
+Once you've finished the steps to create your new 18F guide repo and push it
+to GitHub, click the _Post Your Guide_ entry in the table of contents for the
+final steps to publish your guide.

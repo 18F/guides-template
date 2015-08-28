@@ -2,30 +2,29 @@
 permalink: /updating-the-config-file/
 title: Updating the config file
 ---
-Work your way through these steps as you create a new guide:
+Work your way through these steps to configure the template for your new guide
+by updating the `_config.yml` file:
+
 - [Set the guide name](#set-name)
-- [Copy the `exclude:` entries](#copy-exclude-entries)
+- [Set the `exclude:` entries](#set-exclude-entries)
 - [Register new pages](#register-new-pages)
 - [Update the repository list](#update-repository-list)
-- [Set `google_analytics_ua`](#set-google-analytics)
-
-Once you're finished updating the config file, click the _GitHub Setup_
-entry in the table of contents.
+- [Optional: set the `back_link:` property](#set-back-link)
+- [Optional: update `google_analytics_ua:`](#set-google-analytics)
 
 ## <a name="set-name"></a>Set the guide name
 
-The configuration file is called `_config.yml`. Update the `name:` property,
-which appears as the guide's overall title. For example:
+The `name:` property appears as the guide's overall title. For example:
 
 ```yaml
 name: {{site.name}}
 ```
 
-## <a name="copy-exclude-entries"></a>Copy the `exclude:` entries
+## <a name="set-exclude-entries"></a>Set the `exclude:` entries
 
-Make sure that you update the `exclude:` list to contain at least the
-following files so that they are not copied to your generated `_site`
-directory:
+Make that the `exclude:` list contains at least the following files, and add
+any other files that you might have added which also should not appear in the
+generated `_site` directory:
 
 ```yaml
 exclude:
@@ -57,9 +56,16 @@ existing entries will remain the same.
 ## <a name="update-repository-list"></a>Update the repository list
 
 You will also need to update the `repos:` list to reflect the GitHub
-repository containing your guide. The first of these repositories should be
-the repository for the guide itself, and will be used to generate the _Edit
-this page_ and _file an issue_ links in the footer.
+repository that will contain your guide. The first of these repositories
+should be the repository for the guide itself, and will be used to generate
+the _Edit this page_ and _file an issue_ links in the footer.
+
+The `url:` should be `https://github.com/18F/MY-NEW-GUIDE`, where
+`MY-NEW-GUIDE` is the name you gave your clone of the 18F/guides-template
+repository. For the `description:` property, it is OK to enter something
+generic like "main repository." However, if you are not certain about either
+value, it is also OK to enter placeholder text for these properties and change
+them later, ideally before posting to the 18F Pages server. 
 
 The `repos:` entry of this template contains:
 
@@ -71,10 +77,19 @@ repos:{% for i in site.repos %}
 {% endfor %}
 ```
 
-## <a name="set-google-analytics"></a>Set `google_analytics_ua`
+## <a name="set-back-link"></a>Optional: set the `back_link:` property
 
-Set `google_analytics_ua` to the following, if it isn't set already:
+The `back_link:` property produces the _Read more 18F Guides_ link just under
+the title of the guide at the top of the page. If your document is not
+actually an 18F Guide, you may change this property to link to 18F Pages, or
+any other collection of documents to which your new "guide" actually belongs.
 
-```yaml
-google_analytics_ua: {{ site.google_analytics_ua }}
-```
+## <a name="set-google-analytics"></a>Optional: update `google_analytics_ua:`
+
+The `google_analytics_ua:` property defaults to the Google Analytics account
+identifier for all 18F Pages sites. You can override it if you prefer.
+
+## Next steps
+
+Once you're finished updating the config file, click the _GitHub Setup_
+entry in the table of contents.
