@@ -32,7 +32,7 @@ of your new repository:
 ```shell
 $ git clone git@github.com:18F/guides-template.git MY-NEW-GUIDE
 
-# If that doesn't work, either [set up SSH access](https://help.github.com/articles/generating-ssh-keys/) or use:
+# If that doesn't work, either <a href="https://help.github.com/articles/generating-ssh-keys/">set up SSH access</a> or use:
 $ git clone https://github.com/18F/guides-template.git MY-NEW-GUIDE
 
 $ cd MY-NEW-GUIDE
