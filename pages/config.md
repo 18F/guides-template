@@ -84,7 +84,7 @@ the title of the guide at the top of the page. If your document is not
 actually an 18F Guide, you may change this property to link to 18F Pages, or
 any other collection of documents to which your new "guide" actually belongs.
 
-## <a name="set-google-analytics"></a>Set `google_analytics_ua:`
+## <a name="set-google-analytics"></a>Optional: update `google_analytics_ua:`
 
 The `google_analytics_ua:` property defaults to the Google Analytics account
 identifier for all 18F Pages sites. You can override it if you prefer.
