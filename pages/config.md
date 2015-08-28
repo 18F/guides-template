@@ -10,7 +10,7 @@ by updating the `_config.yml` file:
 - [Register new pages](#register-new-pages)
 - [Update the repository list](#update-repository-list)
 - [Set the `back_link:` property](#set-back-link)
-- [Set `google_analytics_ua:`](#set-google-analytics)
+- [Optional: update `google_analytics_ua:`](#set-google-analytics)
 
 ## <a name="set-name"></a>Set the guide name
 
