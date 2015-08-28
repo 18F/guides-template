@@ -31,6 +31,10 @@ of your new repository:
 
 ```shell
 $ git clone git@github.com:18F/guides-template.git MY-NEW-GUIDE
+
+# If that doesn't work, either [set up SSH access](https://help.github.com/articles/generating-ssh-keys/) or use:
+$ git clone https://github.com/18F/guides-template.git
+
 $ cd MY-NEW-GUIDE
 $ ./go serve
 ```
