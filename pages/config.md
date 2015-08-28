@@ -9,7 +9,7 @@ by updating the `_config.yml` file:
 - [Set the `exclude:` entries](#set-exclude-entries)
 - [Register new pages](#register-new-pages)
 - [Update the repository list](#update-repository-list)
-- [Set the `back_link:` property](#set-back-link)
+- [Optional: set the `back_link:` property](#set-back-link)
 - [Optional: update `google_analytics_ua:`](#set-google-analytics)
 
 ## <a name="set-name"></a>Set the guide name
@@ -77,7 +77,7 @@ repos:{% for i in site.repos %}
 {% endfor %}
 ```
 
-## <a name="set-back-link"></a>Set the `back_link:` property
+## <a name="set-back-link"></a>Optional: set the `back_link:` property
 
 The `back_link:` property produces the _Read more 18F Guides_ link just under
 the title of the guide at the top of the page. If your document is not
