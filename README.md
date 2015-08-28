@@ -50,7 +50,7 @@ gems needed by the template, and launch a running instance on
 
 #### Follow the template instructions
 
-The Guides Template (either [running locally](localhost:4000) or the
+The Guides Template (either [running locally](http://localhost:4000) or the
 [published version](https://pages.18f.gov/guides-template/) will walk you
 through the rest of the steps to edit and publish your guide.
 
