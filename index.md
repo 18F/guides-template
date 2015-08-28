@@ -19,7 +19,7 @@ repository](https://github.com/18F/guides-template/#getting-started) to create
 a local clone of this template.
 
 Once you've created a new clone, click the _Adding a New Page_ entry in the
-table of contents.
+table of contents to begin the rest of the steps.
 
 ## Updating an existing guide/document
 
