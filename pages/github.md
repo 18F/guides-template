@@ -3,6 +3,7 @@ permalink: /github-setup/
 title: GitHub setup
 ---
 - [Create a new local repository](#create-local-repo)
+- [Set up SSH access to GitHub](#set-up-ssh)
 - [Create a new 18F GitHub repository](#create-18f-repo)
 
 Once you've finished the steps below to create your new 18F guide repo and
@@ -33,6 +34,14 @@ All done! Run 'git commit' to create your first commit.
 Then execute `git commit -m 'Initial commit'` to create your new Guide!
 (Unless you're Git savvy and would like to tweak things a bit first.)
 
+## <a name="set-up-ssh"></a>Set up SSH access to GitHub
+
+You may want to [set up SSH access to
+GitHub](https://help.github.com/articles/generating-ssh-keys/) if you haven't
+already, to avoid having to enter your password and two-factor authentication
+code every time you push changes to GitHub. Otherwise, you can use
+`https://github.com/18F/` URLs to access 18F repos.
+
 ## <a name="create-18f-repo"></a>Create a new 18F GitHub repository
 
 Now you're ready to [create a new 18F GitHub
@@ -49,7 +58,12 @@ this point, do the following, replacing `MY-NEW-GUIDE` with the name of your
 guide's repository:
 
 ```
+# If you have SSH set up:
 $ git remote add origin git@github.com:18F/MY-NEW-GUIDE.git
+
+# Otherwise:
+$ git remote add origin https://github.com/18F/MY-NEW-GUIDE.git
+
 $ git push -u origin 18f-pages
 ```
 

@@ -30,7 +30,7 @@ To create a new guide and serve it locally, where `MY-NEW-GUIDE` is the name
 of your new repository:
 
 ```shell
-$ git clone git@github.com:18F/guides-template.git MY-NEW-GUIDE
+$ git clone https://github.com/18F/guides-template.git MY-NEW-GUIDE
 $ cd MY-NEW-GUIDE
 $ ./go serve
 ```
@@ -42,7 +42,7 @@ gems needed by the template, and launch a running instance on
 
 #### Follow the template instructions
 
-The Guides Template (either [running locally](https://localhost:4000/) or the
+The Guides Template (either [running locally](http://localhost:4000) or the
 [published version](https://pages.18f.gov/guides-template/) will walk you
 through the rest of the steps to edit and publish your guide.
 
