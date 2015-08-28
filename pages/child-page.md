@@ -14,23 +14,12 @@ parent: {{ page.parent }}
 ---
 ```
 
-Note the `/parent/child/` format for the permalink, and the `parent:` property. This way, when you're on a parent or child page, the children will be visible in the menu.
-
-Now to add it to the site nav, update `site.navigation` like so:
-
-```yaml
-navigation:
-- text: Introduction
-  url: index.html
-  internal: true
-- text: Adding a new page
-  url: adding-a-new-page/
-  internal: true
-  children:
-    - text: Making a child page
-      url: making-a-child-page/
-      internal: true
-```
+Note the `/parent/child/` format for the permalink, and the `parent:`
+property. This way, when you're on a parent or child page, the children will
+be visible in the menu. (You will need to
+[run `./go update_nav`]({{ site.baseurl }}/updating-the-config-file/#register-new-pages)
+before the changes to the menu will appear, as explained in the _Updating the
+config file_ chapter.)
 
 Now click on the _Adding images_ entry in the table of contents to learn how
 to add images to your guide.

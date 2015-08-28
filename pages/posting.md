@@ -10,6 +10,10 @@ title: Post your guide
 
 ## <a name="create-18f-pages-branch"></a>Create the `18f-pages` branch
 
+If you ran the `./go create_repo` command from the _GitHub setup_ chapter, you
+can skip ahead to the [Create the publishing webhook](#set-webhook) section.
+Otherwise, keep reading.
+
 In order to publish your guide automatically to `pages.18f.gov`, you will need
 to create an `18f-pages` branch. You can do this using the GitHub interface by
 clicking the **branch: master** button and entering `18f-pages` in the **Switch
@@ -45,7 +49,7 @@ blank, and click **Update webhook**:
 
 ## <a name="trigger-a-build"></a>Trigger a build
 
-With the webhook in place, push an update to your `18f-pages` branch to your
+With the webhook in place, push any update to your `18f-pages` branch to your
 GitHub repository. Within seconds, your guide should appear at
 `https://pages.18f.gov/$REPO-NAME`. Your guide is now live!
 

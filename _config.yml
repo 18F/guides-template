@@ -41,6 +41,10 @@ navigation:
 - text: Updating the config file
   url: updating-the-config-file/
   internal: true
+  children:
+  - text: Understanding the `baseurl:` property
+    url: understanding-baseurl/
+    internal: true
 - text: GitHub setup
   url: github-setup/
   internal: true
