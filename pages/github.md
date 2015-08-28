@@ -58,8 +58,7 @@ your own local repository as necessary. Your local repository also already has
 `.gitignore` and `LICENSE.md` files.
 
 After submitting the form to create a new repository, you will see GitHub's
-instructions to create a local repository and push your changes up to it. At
-this point, do the following, replacing `MY-NEW-GUIDE` with the name of your
+instructions to create a local repository and push your changes up to it. You can ignore these instructions. Instead, do the following, replacing `MY-NEW-GUIDE` with the name of your
 guide's repository:
 
 ```
