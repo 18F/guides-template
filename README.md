@@ -30,17 +30,9 @@ To create a new guide and serve it locally, where `MY-NEW-GUIDE` is the name
 of your new repository:
 
 ```shell
-$ git clone git@github.com:18F/guides-template.git MY-NEW-GUIDE
+$ git clone https://github.com/18F/guides-template.git MY-NEW-GUIDE
 $ cd MY-NEW-GUIDE
 $ ./go serve
-```
-
-If the `git clone` command fails with `Permission denied (publickey).` you can 
-either [set up SSH access](https://help.github.com/articles/generating-ssh-keys/)
-and try again, or use:
-
-```shell
-$ git clone https://github.com/18F/guides-template.git MY-NEW-GUIDE
 ```
 
 The `./go` script will check that your Ruby version is supported, install the
