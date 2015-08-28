@@ -1,11 +1,12 @@
 markdown: redcarpet
 name: 18F Guides Template
 exclude:
-- go
+- CONTRIBUTING.md
 - Gemfile
 - Gemfile.lock
-- README.md
 - LICENSE.md
+- README.md
+- go
 
 permalink: pretty
 highlighter: rouge

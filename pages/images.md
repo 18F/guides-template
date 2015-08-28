@@ -19,4 +19,6 @@ an included image">
 
 <img src="{{site.baseurl}}/images/images.png" alt="Example of an included image">
 
+## Next steps
+
 Now click on the _Updating the Config File_ entry in the table of contents.
