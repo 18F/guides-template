@@ -56,8 +56,11 @@ existing entries will remain the same.
 ## <a name="update-repository-list"></a>Update the repository list
 
 You will also need to update the `repos:` list to reflect the GitHub
-repository containing your guide. The `repos:` entry of this template
-contains:
+repository containing your guide. The first of these repositories should be
+the repository for the guide itself, and will be used to generate the _Edit
+this page_ and _file an issue_ links in the footer.
+
+The `repos:` entry of this template contains:
 
 ```yaml
 repos:{% for i in site.repos %}
