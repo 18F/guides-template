@@ -2,6 +2,7 @@
 permalink: /updating-the-config-file/
 title: Updating the config file
 ---
+Work your way through these steps as you create a new guide:
 - [Set the guide name](#set-name)
 - [Copy the `exclude:` entries](#copy-exclude-entries)
 - [Register new pages](#register-new-pages)
