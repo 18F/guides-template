@@ -20,7 +20,8 @@ end
 begin
   require 'go_script'
 rescue LoadError
-  try_command_and_restart 'gem install go_script'
+  try_command_and_restart 'gem install go_script' unless File.exist? 'Gemfile'
+  abort "Please add \"gem 'go_script'\" to your Gemfile"
 end
 
 require 'guides_style_18f'
