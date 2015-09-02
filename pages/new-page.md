@@ -1,6 +1,6 @@
 ---
 permalink: /adding-a-new-page/
-title: Adding a new page
+title: Add a new page
 ---
 To add new pagese, create a 
 [Markdown](http://daringfireball.net/projects/markdown/syntax) file in the
