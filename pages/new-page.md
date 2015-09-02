@@ -2,9 +2,9 @@
 permalink: /adding-a-new-page/
 title: Adding a new page
 ---
-To add new pages to the guide, first create a new
+To add new pagese, create a 
 [Markdown](http://daringfireball.net/projects/markdown/syntax) file in the
-`pages/` directory of the repository. As an example, the Markdown text for
+`pages/` directory of the repository. For example, the Markdown text for
 this page is
 [`pages/new-page.md`](https://github.com/18F/guides-template/blob/18f-pages/pages/new-page.md).
 
@@ -20,12 +20,12 @@ title: {{ page.title }}
 
 **The '`/`' at the end of the `permalink:` attribute is important!** It
 ensures the page is generated as `{{ page.permalink }}index.html`. Without it,
-it would be generated as
+the pages generates as
 `{{ page.permalink | remove_first: '/' | replace:'/','.'}}html`.
 
-## Links to other pages within the guide
+## Link to other pages within the guide
 
-Every link to another page within the same guide _must_ be prefixed with
+Every link to another page _must_ be prefixed with
 `{% raw %}{{ site.baseurl }}{% endraw %}`. For example,
 this link to [Adding images]({{ site.baseurl }}/adding-images/)
 appears in the Markdown source as:
@@ -36,6 +36,6 @@ appears in the Markdown source as:
 
 ## Next steps
 
-Click on the _Adding images_ entry in the table of contents to learn how
-to add images to your guide, or click on _Making a child page_ to see how to
+Click the _Adding images_ entry in the table of contents to learn how
+to add images to your guide, or click _Making a child page_ to see how to
 make chapters appear as children of related chapters.
