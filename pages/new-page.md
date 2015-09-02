@@ -20,7 +20,7 @@ title: {{ page.title }}
 
 **The '`/`' at the end of the `permalink:` attribute is important!** It
 ensures the page is generated as `{{ page.permalink }}index.html`. Without it,
-the pages generates as
+the page generates as
 `{{ page.permalink | remove_first: '/' | replace:'/','.'}}html`.
 
 ## Link to other pages within the guide
