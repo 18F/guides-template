@@ -1,10 +1,10 @@
 ---
-permalink: /adding-a-new-page/making-a-child-page/
+permalink: /add-a-new-page/make-a-child-page/
 title: Make a child page
 parent: Add a new page
 ---
 
-If you want to nest a page under a parent page, follow the instructions to [add a new page]({{ site.baseurl }}/adding-a-new-page/) with two additions to the YAML front matter. Here is the front-matter for this page:
+If you want to nest a page under a parent page, follow the instructions to [add a new page]({{ site.baseurl }}/add-a-new-page/) with two additions to the YAML front matter. Here is the front-matter for this page:
 
 ```yaml
 ---
