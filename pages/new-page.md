@@ -1,6 +1,6 @@
 ---
-permalink: /adding-a-new-page/
-title: Adding a new page
+permalink: /add-a-new-page/
+title: Add a new page
 ---
 To add new pages to the guide, first create a new
 [Markdown](http://daringfireball.net/projects/markdown/syntax) file in the
