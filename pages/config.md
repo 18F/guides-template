@@ -5,12 +5,12 @@ title: Update the config file
 Work your way through these steps to update 
 the `_config.yml` file — this configures your guide's template:
 
-- [Set the guide name](#set-name).
-- [Set the `exclude:` entries](#set-exclude-entries).
-- [Register new pages](#register-new-pages).
-- [Update the repository list](#update-repository-list).
-- [Optional: Set the `back_link:` property](#set-back-link).
-- [Optional: Update `google_analytics_ua:`](#set-google-analytics).
+- [Set the guide name.](#set-name)
+- [Set the `exclude:` entries.](#set-exclude-entries)
+- [Register new pages.](#register-new-pages)
+- [Update the repository list.](#update-repository-list)
+- [Optional: Set the `back_link:` property.](#set-back-link)
+- [Optional: Update `google_analytics_ua:`.](#set-google-analytics)
 
 ## <a name="set-name"></a>Set the guide name
 
