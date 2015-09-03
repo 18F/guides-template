@@ -1,7 +1,7 @@
 ---
-permalink: /updating-the-config-file/understanding-baseurl/
+permalink: /update-the-config-file/understanding-baseurl/
 title: Understanding the `baseurl:` property
-parent: Updating the config file
+parent: Update the config file
 ---
 __It is not necessary to update `baseurl:` yourself in most cases. This
 section is not necessary to follow through with the reset of the
