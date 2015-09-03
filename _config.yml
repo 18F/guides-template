@@ -36,8 +36,8 @@ navigation:
   - text: Making a child page
     url: making-a-child-page/
     internal: true
-- text: Adding images
-  url: adding-images/
+- text: Add images
+  url: add-images/
   internal: true
 - text: Updating the config file
   url: updating-the-config-file/

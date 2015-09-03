@@ -1,5 +1,5 @@
 ---
-permalink: /adding-images/
+permalink: /add-images/
 title: Add images
 ---
 First, create an `images/` directory, and put
