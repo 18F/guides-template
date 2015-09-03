@@ -1,5 +1,5 @@
 ---
-permalink: /updating-the-config-file/understanding-baseurl/
+permalink: /update-the-config-file/understanding-baseurl/
 title: Understanding the `baseurl:` property
 parent: Update the config file
 ---

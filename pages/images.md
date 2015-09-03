@@ -21,4 +21,4 @@ an included image">
 
 ## Next steps
 
-Click the _Updating the Config File_ entry in the table of contents.
+Click the _Update the Config File_ entry in the table of contents.

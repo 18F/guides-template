@@ -27,15 +27,15 @@ the page generates as
 
 Every link to another page _must_ be prefixed with
 `{% raw %}{{ site.baseurl }}{% endraw %}`. For example,
-this link to [Adding images]({{ site.baseurl }}/adding-images/)
+this link to [Add images]({{ site.baseurl }}/add-images/)
 appears in the Markdown source as:
 
 ```
-{% raw %}[Adding images]({{ site.baseurl }}/adding-images/){% endraw %}.
+{% raw %}[Add images]({{ site.baseurl }}/add-images/){% endraw %}.
 ```
 
 ## Next steps
 
-Click the _Adding images_ entry in the table of contents to learn how
-to add images to your guide, or click _Making a child page_ to see how to
+Click the _Add images_ entry in the table of contents to learn how
+to add images to your guide, or click _Make a child page_ to see how to
 make chapters appear as children of related chapters.

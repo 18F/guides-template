@@ -18,10 +18,10 @@ follow [the "Getting started" instructions in the 18F/guides-template GitHub
 repository](https://github.com/18F/guides-template/#getting-started) to create
 a local clone of this template.
 
-Once you've created a clone, click the _Adding a New Page_ entry in the
-table of contents to begin the rest of the steps.
+Once you've created a clone, click the _Add a New Page_ entry in the table of
+contents to begin the rest of the steps.
 
-## Updating an existing guide/document
+## Update an existing guide/document
 
 __Note: You only need to do this if your existing guide or document is not already
 using the `guides_style_18f` gem or if it does not have an `18f-pages`
@@ -44,7 +44,7 @@ $ git checkout -b 18f-pages gh-pages
 $ git push origin 18f-pages
 ```
 
-Follow the instructions in _Updating the Config File_ to update your
+Follow the instructions in _Update the Config File_ to update your
 `_config.yml` accordingly. You may also need to consult the _GitHub Setup_ and
 _Post Your Guide_ chapters to ensure your guide is correctly published to
 `pages.18f.gov` and linked from the main [18F
