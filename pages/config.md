@@ -2,15 +2,15 @@
 permalink: /update-the-config-file/
 title: Update the config file
 ---
-Work your way through these steps to configure the template for your new guide
-by updating the `_config.yml` file:
+Work your way through these steps to update 
+the `_config.yml` file — this configures the 18F style template for your specific guide:
 
-- [Set the guide name](#set-name)
-- [Set the `exclude:` entries](#set-exclude-entries)
-- [Register new pages](#register-new-pages)
-- [Update the repository list](#update-repository-list)
-- [Optional: set the `back_link:` property](#set-back-link)
-- [Optional: update `google_analytics_ua:`](#set-google-analytics)
+- [Set the guide name.](#set-name)
+- [Set the `exclude:` entries.](#set-exclude-entries)
+- [Register new pages.](#register-new-pages)
+- [Update the repository list.](#update-repository-list)
+- [Optional: Set the `back_link:` property.](#set-back-link)
+- [Optional: Update `google_analytics_ua:`.](#set-google-analytics)
 
 ## <a name="set-name"></a>Set the guide name
 
@@ -22,8 +22,8 @@ name: {{site.name}}
 
 ## <a name="set-exclude-entries"></a>Set the `exclude:` entries
 
-Make that the `exclude:` list contains at least the following files, and add
-any other files that you might have added which also should not appear in the
+Make sure the `exclude:` list contains at least the following files, and add
+any other files you might have added that shouldn't appear in the
 generated `_site` directory:
 
 ```yaml
@@ -55,16 +55,16 @@ existing entries will remain the same.
 
 ## <a name="update-repository-list"></a>Update the repository list
 
-You will also need to update the `repos:` list to reflect the GitHub
+You'll need to update the `repos:` list to reflect the GitHub
 repository that will contain your guide. The first of these repositories
-should be the repository for the guide itself, and will be used to generate
+should be the repository for the guide itself; it will be used to generate
 the _Edit this page_ and _file an issue_ links in the footer.
 
 The `url:` should be `https://github.com/18F/MY-NEW-GUIDE`, where
 `MY-NEW-GUIDE` is the name you gave your clone of the 18F/guides-template
-repository. For the `description:` property, it is OK to enter something
-generic like "main repository." However, if you are not certain about either
-value, it is also OK to enter placeholder text for these properties and change
+repository. For the `description:` property, it's OK to enter something
+generic like "main repository." However, if you aren't certain about either
+value, it's also OK to enter placeholder text for these properties and change
 them later, ideally before posting to the 18F Pages server. 
 
 The `repos:` entry of this template contains:
@@ -81,7 +81,7 @@ repos:{% for i in site.repos %}
 
 The `back_link:` property produces the _Read more 18F Guides_ link just under
 the title of the guide at the top of the page. If your document is not
-actually an 18F Guide, you may change this property to link to 18F Pages, or
+actually an 18F Guide, you may change this property to link to 18F Pages— or
 any other collection of documents to which your new "guide" actually belongs.
 
 ## <a name="set-google-analytics"></a>Optional: update `google_analytics_ua:`
