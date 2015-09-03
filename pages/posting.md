@@ -5,11 +5,11 @@ title: Post your guide
 Work your way through these steps to set up automated publishing to [18F
 Pages](https://pages.18f.gov/) for your new guide:
 
-- [Create the `18f-pages` branch](#create-18f-pages-branch)
-- [Set the default branch](#set-default-branch)
-- [Create the publishing webhook](#set-webhook)
-- [Trigger a build](#trigger-a-build)
-- [Add the new guide to 18F Guides](#add-new-guide)
+- [Create the `18f-pages` branch.](#create-18f-pages-branch)
+- [Set the default branch.](#set-default-branch)
+- [Create the publishing webhook.](#set-webhook)
+- [Trigger a build.](#trigger-a-build)
+- [Add the new guide to 18F Guides.](#add-new-guide)
 
 ## <a name="create-18f-pages-branch"></a>Create the `18f-pages` branch
 
@@ -17,7 +17,7 @@ Pages](https://pages.18f.gov/) for your new guide:
 you can skip ahead to the [Create the publishing webhook](#set-webhook)
 section.  Otherwise, keep reading.**
 
-In order to publish your guide automatically to `pages.18f.gov`, you will need
+To publish your guide automatically to `pages.18f.gov`, you'll need
 to create an `18f-pages` branch. You can do this using the GitHub interface by
 clicking the **branch: master** button and entering `18f-pages` in the **Switch
 branches/tags** drop-down box:
@@ -27,11 +27,11 @@ interface">
 
 ## <a name="set-default-branch"></a>Set the default branch
 
-_Note: If your repository is not just a Jekyll site, e.g. it is a project
-repository with a `gh-pages` or `18f-pages` branch for documentation, you can
+_Note: If your repository is not just a Jekyll site — for example, if it's a project
+repository with a `gh-pages` or `18f-pages` branch for documentation — you can
 ignore this step._
 
-You also need to set `18f-pages` branch as the default. First, click the **Settings** page button (on the right side of the screen):<br/>
+You also need to set `18f-pages` branch as the default. First, click the **Settings** page button on the right side of the screen:<br/>
 <img src="{{site.baseurl}}/images/gh-settings-button.png" alt="GitHub settings page button">
 
 This will present you with the **Options** page. In the **Settings** section, select `18f-pages` from the **Default branch** drop-down menu:<br/>
@@ -39,11 +39,11 @@ This will present you with the **Options** page. In the **Settings** section, se
 
 Deleting the original `master` branch, both on GitHub and locally, is left as
 an exercise for the reader. Doing so will help avoid confusion in the long run
-but is not strictly necessary.
+but isn't strictly necessary.
 
 ## <a name="set-webhook"></a>Create the publishing webhook
 
-Now go into the **Webhooks & Services** section of the **Settings** section
+Go into the **Webhooks & Services** section of the **Settings** section
 and click the **Add webhook** button. On the following screen, set the
 **Payload URL** to `https://pages.18f.gov/deploy`, leave the **Secret** field
 blank, and click **Update webhook**:
@@ -58,7 +58,7 @@ GitHub repository. Within seconds, your guide should appear at
 
 ## <a name="add-new-guide"></a>Add the new guide to 18F Guides
 
-Now for the final step: Add an entry to the `navigation:` list of [18F
+You've reached the final step! Add an entry to the `navigation:` list of [18F
 Guides](http://18f.github.io/guides/) linking to your new guide. You can [use
 this link to edit the file directly in
 GitHub](https://github.com/18F/guides/edit/18f-pages/_config.yml):
