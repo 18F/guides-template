@@ -39,8 +39,8 @@ navigation:
 - text: Add images
   url: add-images/
   internal: true
-- text: Updating the config file
-  url: updating-the-config-file/
+- text: Update the config file
+  url: update-the-config-file/
   internal: true
   children:
   - text: Understanding the `baseurl:` property

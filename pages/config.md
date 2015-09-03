@@ -1,6 +1,6 @@
 ---
-permalink: /updating-the-config-file/
-title: Updating the config file
+permalink: /update-the-config-file/
+title: Update the config file
 ---
 Work your way through these steps to configure the template for your new guide
 by updating the `_config.yml` file:

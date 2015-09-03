@@ -16,11 +16,11 @@ parent: {{ page.parent }}
 
 Note the `/parent/child/` format for the permalink, and the `parent:`
 property. This way, when you're on a parent or child page, the children are visible in the menu. (You'll need to
-[run `./go update_nav`]({{ site.baseurl }}/updating-the-config-file/#register-new-pages)
-before the changes to the menu appear— read more about that in the _Updating the
+[run `./go update_nav`]({{ site.baseurl }}/update-the-config-file/#register-new-pages)
+before the changes to the menu appear— read more about that in the _Update the
 config file_ chapter.)
 
 ## Next steps
 
-Click the _Adding images_ entry in the table of contents to learn how
-to add images to your guide.
+Click the _Add images_ entry in the table of contents to learn how to add
+images to your guide.
