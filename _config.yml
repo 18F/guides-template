@@ -29,18 +29,18 @@ navigation:
 - text: Introduction
   url: index.html
   internal: true
-- text: Adding a new page
-  url: adding-a-new-page/
+- text: Add a new page
+  url: add-a-new-page/
   internal: true
   children:
-  - text: Making a child page
-    url: making-a-child-page/
+  - text: Make a child page
+    url: make-a-child-page/
     internal: true
-- text: Adding images
-  url: adding-images/
+- text: Add images
+  url: add-images/
   internal: true
-- text: Updating the config file
-  url: updating-the-config-file/
+- text: Update the config file
+  url: update-the-config-file/
   internal: true
   children:
   - text: Understanding the `baseurl:` property
