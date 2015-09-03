@@ -1,5 +1,5 @@
 ---
-permalink: /adding-a-new-page/
+permalink: /add-a-new-page/
 title: Add a new page
 ---
 To add new pages, create a 

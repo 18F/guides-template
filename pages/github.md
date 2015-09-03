@@ -4,21 +4,21 @@ title: GitHub setup
 ---
 Work your way through these steps to prepare your GitHub repository:
 
-- [Create a new local repository](#create-local-repo)
-- [Set up SSH access to GitHub](#set-up-ssh)
-- [Create a new 18F GitHub repository](#create-18f-repo)
+- [Create a new local repository.](#create-local-repo)
+- [Set up SSH access to GitHub.](#set-up-ssh)
+- [Create a new 18F GitHub repository.](#create-18f-repo)
 
 ## <a name="create-local-repo"></a>Create a new local repository
 
-Once you've got the `_config.yml` file up-to-date, you need detach your new
-guide's history from that of the template. We will do that by replacing the
-original local Git repository your guide inherited from the template with a
-completely new local repository that will not contain the history from the
-template, and will become the starting point for your new GitHub repository.
+Once you've got the `_config.yml` file up to date, detach your new
+guide's history from the template's. Do this by replacing the
+original local Git repository — the one your guide inherited — from the template with a
+completely new local repository, which won't contain the history from the
+template and will become the starting point for your new GitHub repository.
 
-In the top-level directory, run `./go create_repo` to remove all of the pages
-and images that came with this template (make sure you didn't reuse any of the
-file names from this template!) and create a new Git repository:
+In the top-level directory, run `./go create_repo` to remove all the pages
+and images that came with this template — make sure you didn't reuse any of the
+file names from this template! — and create a new Git repository:
 
 ```
 $ ./go create_repo
@@ -41,7 +41,7 @@ Then execute `git commit -m 'Initial commit'` to create your new Guide!
 
 You may want to [set up SSH access to
 GitHub](https://help.github.com/articles/generating-ssh-keys/) if you haven't
-already, to avoid having to enter your password and two-factor authentication
+already— this way you won't need to enter your password and two-factor authentication
 code every time you push changes to GitHub. Otherwise, you can use
 `https://github.com/18F/` URLs to access 18F repos.
 
@@ -53,13 +53,12 @@ want to set the `Public` attribute under the **Team** section and add a
 fitting `Description`.
 
 Do _not_ select **Initialize this repository with a README**, **Add
-.gitignore** or **Add a license**. Instead, update the `README.md` file in
-your own local repository as necessary. Your local repository also already has
+.gitignore**, or **Add a license**. Instead, update the `README.md` file in
+your own, local repository, as necessary. Your local repository also already has
 `.gitignore` and `LICENSE.md` files.
 
-After submitting the form to create a new repository, you will see GitHub's
-instructions to create a local repository and push your changes up to it. You can ignore these instructions. Instead, do the following, replacing `MY-NEW-GUIDE` with the name of your
-guide's repository:
+After submitting the form to create a new repository, you'll see GitHub's
+instructions to create a local repository and push your changes up to it. You can ignore these instructions. Instead, do the following, replacing `MY-NEW-GUIDE` with the name of your guide's repository:
 
 ```
 # If you have SSH set up:
@@ -79,6 +78,6 @@ description and website of the GitHub repository">
 
 ## Next steps
 
-Once you've finished the steps to create your new 18F guide repo and push it
+Once you've finished the steps to create your new guide repo and push it
 to GitHub, click the _Post Your Guide_ entry in the table of contents for the
 final steps to publish your guide.
