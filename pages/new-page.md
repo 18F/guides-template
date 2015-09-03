@@ -2,7 +2,7 @@
 permalink: /adding-a-new-page/
 title: Add a new page
 ---
-To add new pagese, create a 
+To add new pages, create a 
 [Markdown](http://daringfireball.net/projects/markdown/syntax) file in the
 `pages/` directory of the repository. For example, the Markdown text for
 this page is
