@@ -3,7 +3,7 @@ permalink: /updating-the-config-file/
 title: Update the config file
 ---
 Work your way through these steps to update 
-the `_config.yml` file — this configures your guide's template:
+the `_config.yml` file — this configures the 18F style template for your specific guide:
 
 - [Set the guide name.](#set-name)
 - [Set the `exclude:` entries.](#set-exclude-entries)
