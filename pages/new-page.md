@@ -2,7 +2,8 @@
 permalink: /add-a-new-page/
 title: Add a new page
 ---
-To add new pages, create a 
+
+To add new pages, create a
 [Markdown](http://daringfireball.net/projects/markdown/syntax) file in the
 `pages/` directory of the repository. For example, the Markdown text for
 this page is
@@ -22,17 +23,6 @@ title: {{ page.title }}
 ensures the page is generated as `{{ page.permalink }}index.html`. Without it,
 the page generates as
 `{{ page.permalink | remove_first: '/' | replace:'/','.'}}html`.
-
-## Link to other pages within the guide
-
-Every link to another page _must_ be prefixed with
-`{% raw %}{{ site.baseurl }}{% endraw %}`. For example,
-this link to [Add images]({{ site.baseurl }}/add-images/)
-appears in the Markdown source as:
-
-```
-{% raw %}[Add images]({{ site.baseurl }}/add-images/){% endraw %}.
-```
 
 ## Next steps
 
