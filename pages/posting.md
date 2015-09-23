@@ -43,6 +43,15 @@ but isn't strictly necessary.
 
 ## <a name="set-webhook"></a>Create the publishing webhook
 
+**18F Team members can skip this step!** Our pages are now building via an
+organization-wide GitHub webhook. There is no need to set up a repo-specific
+webhook anymore.
+
+**Other users running their own [18F/pages](https://github.com/18F/pages/)
+instance:** You can either set up a webhook for your organization, or you can
+add it per-repository as described below. The steps are nearly identical in
+either case.
+
 Go into the **Webhooks & Services** section of the **Settings** section
 and click the **Add webhook** button. On the following screen, set the
 **Payload URL** to `https://pages.18f.gov/deploy`, leave the **Secret** field
