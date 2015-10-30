@@ -7,9 +7,11 @@ exclude:
 - LICENSE.md
 - README.md
 - go
+- vendor
 
 permalink: pretty
 highlighter: rouge
+incremental: true
 
 sass:
   style: :compressed
@@ -65,8 +67,7 @@ back_link:
 google_analytics_ua: UA-48605964-19
 
 defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "guides_style_18f_default"
+- scope:
+    path: ""
+  values:
+    layout: "guides_style_18f_default"
