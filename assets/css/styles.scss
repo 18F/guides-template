@@ -3,14 +3,16 @@
 
 @import "guides_style_18f";
 
-// Header 
+// Header ------------- //
 
-header {
+.site-header {
   border-bottom: 4px solid #1188ff;
   padding: 2em 0;
 }
 
 .logo {
+  max-width: 7.5rem;
+
   @include media($medium-screen) {
     float: right;
     max-width: 6rem;
@@ -21,10 +23,19 @@ header {
   display: inline-block;
   font-size: $h2-font-size;
   margin-top: 0;
+
+  a {
+    color: $color-base;
+  }
 }
 
-// Sidebar navigation
+// Sidebar navigation --------- //
 
+.sidebar-nav {
+  @include media($medium-screen) {
+    margin-top: 6rem;
+  }
+}
 .usa-sidenav-list li {
   position: relative;
 }
@@ -73,4 +84,12 @@ header {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+// Footer ------------ //
+
+.site-footer {
+  background-color: $color-gray-lightest;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
