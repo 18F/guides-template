@@ -1,10 +1,10 @@
 PATH
   remote: ../guides-style
   specs:
-    guides_style_18f (0.1.5)
-      jekyll (~> 2.5)
-      rouge (~> 1.9)
-      sass (~> 3.4)
+    guides_style_18f (0.1.6)
+      jekyll
+      rouge
+      sass
       us_web_design_standards
 
 GEM
