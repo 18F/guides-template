@@ -1,3 +1,12 @@
+PATH
+  remote: ../guides-style
+  specs:
+    guides_style_18f (0.1.5)
+      jekyll (~> 2.5)
+      rouge (~> 1.9)
+      sass (~> 3.4)
+      us_web_design_standards
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -17,10 +26,6 @@ GEM
     go_script (0.1.4)
       bundler (~> 1.10)
       safe_yaml (~> 1.0)
-    guides_style_18f (0.1.5)
-      jekyll (~> 2.5)
-      rouge (~> 1.9)
-      sass (~> 3.4)
     hitimes (1.2.2)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
@@ -69,6 +74,8 @@ GEM
       hitimes
     toml (0.1.2)
       parslet (~> 1.5.0)
+    us_web_design_standards (0.0.0)
+      sass (~> 3.4)
     yajl-ruby (1.2.1)
 
 PLATFORMS
@@ -76,7 +83,7 @@ PLATFORMS
 
 DEPENDENCIES
   go_script
-  guides_style_18f
+  guides_style_18f!
   jekyll
   rouge
 
