@@ -16,9 +16,9 @@ For example, when run locally, the URL for this guide is
 `https://pages.18f.gov/guides-template/`.
 
 The URLs of the individual section pages are relative to the `baseurl:`. For
-example, the `permalink:` of this page is `{{page.permalink}}`. The full local
-URL is `http://localhost:4000{{page.permalink}}`, and in
-production it's `https://pages.18f.gov/guides-template{{page.permalink}}`.
+example, the `permalink:` of this page is `{{page.url}}`. The full local
+URL is `http://localhost:4000{{page.url}}`, and in
+production it's `https://pages.18f.gov/guides-template{{page.url}}`.
 
 ## Change the `baseurl:` when serving locally
 
