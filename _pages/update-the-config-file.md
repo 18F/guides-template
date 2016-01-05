@@ -1,5 +1,4 @@
 ---
-permalink: /update-the-config-file/
 title: Update the config file
 ---
 Work your way through these steps to update 

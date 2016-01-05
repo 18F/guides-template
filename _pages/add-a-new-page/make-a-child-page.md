@@ -1,5 +1,4 @@
 ---
-permalink: /add-a-new-page/make-a-child-page/
 title: Make a child page
 parent: Add a new page
 ---

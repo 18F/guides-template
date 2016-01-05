@@ -1,5 +1,4 @@
 ---
-permalink: /post-your-guide/
 title: Post your guide
 ---
 Work your way through these steps to set up automated publishing to [18F
