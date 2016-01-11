@@ -1,5 +1,4 @@
 ---
-permalink: /update-the-config-file/
 title: Update the config file
 ---
 Work your way through these steps to update 
@@ -38,8 +37,8 @@ the `navigation:` section of this guide contains:
 
 ```yaml
 navigation:
-{% for i in site.navigation %}- text: {{ i.text }}
-  url: {{ i.url }}
+{% for i in site.navigation %}- text: {{ i.text }}{% if i.url %}
+  url: {{ i.url }}{% endif %}
   internal: {{ i.internal }}{% if i.children %}
   children:{% for child in i.children %}
   - text: {{ child.text }}
@@ -48,10 +47,10 @@ navigation:
 {% endfor %}```
 
 Run `./go update_nav` from the root directory to update this list
-automatically whenever you add pages or make `title:`, `permalink:`, or
-`parent:` changes. After running the script, you may want to edit the results
-by hand to produce the desired ordering of any new pages; the order of
-existing entries will remain the same.
+automatically whenever you add pages, move pages, or make `title:`,
+`permalink:`, or `parent:` changes. After running the script, you may want to
+edit the results by hand to produce the desired ordering of any new pages; the
+order of existing entries will remain the same.
 
 ## <a name="update-repository-list"></a>Update the repository list
 

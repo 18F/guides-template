@@ -29,7 +29,6 @@ logoalt: 18F logo
 # List links that should appear in the site sidebar here
 navigation:
 - text: Introduction
-  url: index.html
   internal: true
 - text: Add a new page
   url: add-a-new-page/
@@ -65,6 +64,11 @@ back_link:
   text: Read more 18F Guides
 
 google_analytics_ua: UA-48605964-19
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
 
 defaults:
 - scope:

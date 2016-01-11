@@ -1,5 +1,4 @@
 ---
-permalink: /github-setup/
 title: GitHub setup
 ---
 Work your way through these steps to prepare your GitHub repository:
