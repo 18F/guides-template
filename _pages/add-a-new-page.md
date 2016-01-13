@@ -56,6 +56,12 @@ appears in the Markdown source as:
 {% raw %}[Add images]({{ site.baseurl }}/add-images/){% endraw %}.
 ```
 
+Also, **the '`/`' at the end is important**, but for a different reason. If
+you forget the `/`, you may get page-not-found errors when following a link
+locally. This is because the web server built into Jekyll will look for a
+_file_ named `add-images` instead of an `add-images` _directory_ containing an
+`index.html` file.
+
 ## Next steps
 
 Click the _Add images_ entry in the table of contents to learn how
