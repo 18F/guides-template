@@ -47,10 +47,10 @@ navigation:
 {% endfor %}```
 
 Run `./go update_nav` from the root directory to update this list
-automatically whenever you add pages, move pages, or make `title:`,
-`permalink:`, or `parent:` changes. After running the script, you may want to
-edit the results by hand to produce the desired ordering of any new pages; the
-order of existing entries will remain the same.
+automatically whenever you add pages, move pages, or make changes to `title:`
+or `permalink:`. After running the script, you may want to edit the results by
+hand to produce the desired ordering of any new pages; the order of existing
+entries will remain the same.
 
 ## <a name="update-repository-list"></a>Update the repository list
 
