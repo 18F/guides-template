@@ -4,6 +4,13 @@ title: Advanced features
 These features are not necessary to produce a guide, but are available if you
 need them.
 
+## Checking the build log
+
+If your site did not rebuild after pushing an update, see the latest build log
+at `https://pages.18f.gov/MY-SITE/build.log`, where `MY-SITE` is the name of
+your Guide's repository. For example, the latest build log for this site is
+[`https://pages.18f.gov/guides-template/build.log`](https://pages.18f.gov/guides-template/build.log).
+
 ## Server-generated defaults
 
 The [18F Pages Server](https://www.npmjs.com/package/18f-pages-server) will
