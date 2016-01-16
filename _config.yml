@@ -25,6 +25,9 @@ author:
 logourl: /assets/img/18f-logo.png
 logoalt: 18F logo
 
+# To expand all navigation bar entries by default, set this property to true:
+expand_nav: true
+
 # Navigation
 # List links that should appear in the site sidebar here
 navigation:
