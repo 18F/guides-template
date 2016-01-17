@@ -45,6 +45,20 @@ If you add your own custom `permalink:`, **the '`/`' at the end of the
 `{{ page.url }}index.html`. Without it, the page generates as
 `/{{ page.url | remove_first: '/' | replace:'/','.'}}html`.
 
+## Setting the title in the navigation bar
+
+By default, the title appearing in the navigation bar will match the `title:`
+specified in the front matter of the page. If you'd like to specify a
+different name in the navigation bar, you can also set the `navtitle:`
+property:
+
+```yaml
+---
+title: Since brevity is the soul of wit, I'll be brief.
+navtitle: Polonius's advice
+---
+```
+
 ## Link to other pages within the guide
 
 Every link to another page _must_ be prefixed with

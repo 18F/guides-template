@@ -6,7 +6,7 @@ the `_config.yml` file — this configures the 18F style template for your speci
 
 - [Set the guide name.](#set-name)
 - [Set the `exclude:` entries.](#set-exclude-entries)
-- [Register new pages.](#register-new-pages)
+- [Register pages in the navigation bar.](#register-pages-in-nav-bar)
 - [Update the repository list.](#update-repository-list)
 - [Optional: Set the `back_link:` property.](#set-back-link)
 - [Optional: Update `google_analytics_ua:`.](#set-google-analytics)
@@ -30,7 +30,7 @@ exclude:
 {% for i in site.exclude %}- {{ i }}
 {% endfor %}```
 
-## <a name="register-new-pages"></a>Register new pages
+## <a name="register-pages-in-nav-bar"></a>Register pages in the navigation bar
 
 The `navigation:` list is used to generate the table of contents. For example,
 the `navigation:` section of this guide contains:

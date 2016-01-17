@@ -56,6 +56,9 @@ navigation:
 - text: Post your guide
   url: post-your-guide/
   internal: true
+- text: Advanced features
+  url: advanced-features/
+  internal: true
 
 repos:
 - name: Guides Template

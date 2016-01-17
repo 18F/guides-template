@@ -26,7 +26,7 @@ title: {{ page.title }}
 
 Note the `/parent/child/` format for the permalink. This way, when you're on a
 parent or child page, the children are visible in the menu. (You'll need to
-[run `./go update_nav`]({{ site.baseurl }}/update-the-config-file/#register-new-pages)
+[run `./go update_nav`]({{ site.baseurl }}/update-the-config-file/#register-pages-in-nav-bar)
 before the changes to the menu appear— read more about that in the _Update the
 config file_ chapter.)
 
