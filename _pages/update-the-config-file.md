@@ -32,7 +32,7 @@ exclude:
 
 ## <a name="register-pages-in-nav-bar"></a>Register pages in the navigation bar
 
-The `navigation:` list is used to generate the table of contents. For example,
+The `navigation:` list generates the table of contents. For example,
 the `navigation:` section of this guide contains:
 
 ```yaml
@@ -46,11 +46,12 @@ navigation:
     internal: {{ child.internal }}{% endfor %}{% endif %}
 {% endfor %}```
 
-Run `./go update_nav` from the root directory to update this list
-automatically whenever you add pages, move pages, or make changes to `title:`
-or `permalink:`. After running the script, you may want to edit the results by
-hand to produce the desired ordering of any new pages; the order of existing
-entries will remain the same.
+After you add pages, move pages, or make changes to `title:` or `permalink:`,
+run `./go update_nav` from the root directory to produce this list (it will
+reflect the arrangement and contents of the files in your pages directory).
+After running the script, you may edit the results by hand to produce the
+desired ordering of any new pages; the order of existing entries will remain
+the same.
 
 ## <a name="update-repository-list"></a>Update the repository list
 
