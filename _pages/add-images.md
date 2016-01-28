@@ -30,6 +30,6 @@ relative to the parent directory of the document, specified as `..`:
 
 <img src="../images.png" alt="Example of an included image">
 
-## Next steps
+### Next steps
 
 Click the _Update the Config File_ entry in the table of contents.

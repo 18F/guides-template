@@ -45,7 +45,7 @@ If you add your own custom `permalink:`, **the '`/`' at the end of the
 `{{ page.url }}index.html`. Without it, the page generates as
 `/{{ page.url | remove_first: '/' | replace:'/','.'}}html`.
 
-## Setting the title in the navigation bar
+### Setting the title in the navigation bar
 
 By default, the title appearing in the navigation bar will match the `title:`
 specified in the front matter of the page. If you'd like to specify a
@@ -59,7 +59,7 @@ navtitle: Polonius's advice
 ---
 ```
 
-## Link to other pages within the guide
+### Link to other pages within the guide
 
 Every link to another page _must_ be prefixed with
 `{% raw %}{{ site.baseurl }}{% endraw %}`. For example,
@@ -76,7 +76,7 @@ locally. This is because the web server built into Jekyll will look for a
 _file_ named `add-images` instead of an `add-images` _directory_ containing an
 `index.html` file.
 
-## Next steps
+### Next steps
 
 Click the _Add images_ entry in the table of contents to learn how
 to add images to your guide, or click _Make a child page_ to see how to

@@ -30,7 +30,7 @@ parent or child page, the children are visible in the menu. (You'll need to
 before the changes to the menu appear— read more about that in the _Update the
 config file_ chapter.)
 
-## Next steps
+### Next steps
 
 Click the _Add images_ entry in the table of contents to learn how to add
 images to your guide.

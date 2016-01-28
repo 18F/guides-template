@@ -7,7 +7,7 @@ Work your way through these steps to prepare your GitHub repository:
 - [Set up SSH access to GitHub.](#set-up-ssh)
 - [Create a new 18F GitHub repository.](#create-18f-repo)
 
-## <a name="create-local-repo"></a>Create a new local repository
+### <a name="create-local-repo"></a>Create a new local repository
 
 Once you've got the `_config.yml` file up to date, detach your new
 guide's history from the template's. Do this by replacing the
@@ -36,7 +36,7 @@ All done! Run 'git commit' to create your first commit.
 Then execute `git commit -m 'Initial commit'` to create your new Guide!
 (Unless you're Git savvy and would like to tweak things a bit first.)
 
-## <a name="set-up-ssh"></a>Set up SSH access to GitHub
+### <a name="set-up-ssh"></a>Set up SSH access to GitHub
 
 You may want to [set up SSH access to
 GitHub](https://help.github.com/articles/generating-ssh-keys/) if you haven't
@@ -44,7 +44,7 @@ already— this way you won't need to enter your password and two-factor authent
 code every time you push changes to GitHub. Otherwise, you can use
 `https://github.com/18F/` URLs to access 18F repos.
 
-## <a name="create-18f-repo"></a>Create a new 18F GitHub repository
+### <a name="create-18f-repo"></a>Create a new 18F GitHub repository
 
 Now you're ready to [create a new 18F GitHub
 repository](https://github.com/organizations/18F/repositories/new). You'll
@@ -75,7 +75,7 @@ repository after creating it:
 <img src="{{site.baseurl}}/images/description.png" alt="Setting the
 description and website of the GitHub repository">
 
-## Next steps
+### Next steps
 
 Once you've finished the steps to create your new guide repo and push it
 to GitHub, click the _Post Your Guide_ entry in the table of contents for the
