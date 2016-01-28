@@ -10,7 +10,7 @@ Pages](https://pages.18f.gov/) for your new guide:
 - [Trigger a build.](#trigger-a-build)
 - [Add the new guide to 18F Guides.](#add-new-guide)
 
-## <a name="create-18f-pages-branch"></a>Create the `18f-pages` branch
+### <a name="create-18f-pages-branch"></a>Create the `18f-pages` branch
 
 **If you ran the `./go create_repo` command from the _GitHub setup_ chapter,
 you can skip ahead to the [Create the publishing webhook](#set-webhook)
@@ -24,7 +24,7 @@ branches/tags** drop-down box:
 <img src="{{site.baseurl}}/images/18f-pages.png" alt="GitHub branch creation
 interface">
 
-## <a name="set-default-branch"></a>Set the default branch
+### <a name="set-default-branch"></a>Set the default branch
 
 _Note: If your repository is not just a Jekyll site — for example, if it's a project
 repository with a `gh-pages` or `18f-pages` branch for documentation — you can
@@ -40,7 +40,7 @@ Deleting the original `master` branch, both on GitHub and locally, is left as
 an exercise for the reader. Doing so will help avoid confusion in the long run
 but isn't strictly necessary.
 
-## <a name="set-webhook"></a>Create the publishing webhook
+### <a name="set-webhook"></a>Create the publishing webhook
 
 **18F Team members can skip this step!** Our pages are now building via an
 organization-wide GitHub webhook. There is no need to set up a repo-specific
@@ -58,13 +58,13 @@ blank, and click **Update webhook**:
 
 <img src="{{site.baseurl}}/images/gh-webhook.png" alt="Set the GitHub webhook">
 
-## <a name="trigger-a-build"></a>Trigger a build
+### <a name="trigger-a-build"></a>Trigger a build
 
 With the webhook in place, push any update to your `18f-pages` branch to your
 GitHub repository. Within seconds, your guide should appear at
 `https://pages.18f.gov/MY-NEW-GUIDE`. Your guide is now live!
 
-## <a name="add-new-guide"></a>Add the new guide to 18F Guides
+### <a name="add-new-guide"></a>Add the new guide to 18F Guides
 
 You've reached the final step! Add an entry to the `navigation:` list of [18F
 Guides](http://18f.github.io/guides/) linking to your new guide. You can [use

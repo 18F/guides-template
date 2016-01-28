@@ -11,7 +11,7 @@ the same theme.
 The template is derived from [CFPB/DOCter](https://github.com/CFPB/DOCter).
 It uses [Jekyll](http://jekyllrb.com/) as the rendering engine.
 
-## Create a new guide/document
+### Create a new guide/document
 
 To get started on a new guide (or other document based on this theme), 
 follow [the "Getting started" instructions in the 18F/guides-template GitHub
@@ -21,7 +21,7 @@ a local clone of this template.
 Once you've created a clone, click the _Add a New Page_ entry in the table of
 contents to begin the rest of the steps.
 
-## Update an existing guide/document
+### Update an existing guide/document
 
 __Note: You only need to do this if your existing guide or document is not already
 using the `guides_style_18f` gem or if it does not have an `18f-pages`

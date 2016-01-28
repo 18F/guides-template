@@ -19,7 +19,7 @@ example, the `permalink:` of this page is `{{page.url}}`. The full local
 URL is `http://localhost:4000{{page.url}}`, and in
 production it's `https://pages.18f.gov/guides-template{{page.url}}`.
 
-## Change the `baseurl:` when serving locally
+### Change the `baseurl:` when serving locally
 
 If you you do change the `baseurl:` property in the `_config.yml` file,
 **remember to include the trailing '`/`' when serving locally**. The Jekyll

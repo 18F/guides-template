@@ -11,7 +11,7 @@ the `_config.yml` file — this configures the 18F style template for your speci
 - [Optional: Set the `back_link:` property.](#set-back-link)
 - [Optional: Update `google_analytics_ua:`.](#set-google-analytics)
 
-## <a name="set-name"></a>Set the guide name
+### <a name="set-name"></a>Set the guide name
 
 The `name:` property appears as the guide's overall title. For example:
 
@@ -19,7 +19,7 @@ The `name:` property appears as the guide's overall title. For example:
 name: {{site.name}}
 ```
 
-## <a name="set-exclude-entries"></a>Set the `exclude:` entries
+### <a name="set-exclude-entries"></a>Set the `exclude:` entries
 
 Make sure the `exclude:` list contains at least the following files, and add
 any other files you might have added that shouldn't appear in the
@@ -30,7 +30,7 @@ exclude:
 {% for i in site.exclude %}- {{ i }}
 {% endfor %}```
 
-## <a name="register-pages-in-nav-bar"></a>Register pages in the navigation bar
+### <a name="register-pages-in-nav-bar"></a>Register pages in the navigation bar
 
 The `navigation:` list generates the table of contents. For example,
 the `navigation:` section of this guide contains:
@@ -53,7 +53,7 @@ After running the script, you may edit the results by hand to produce the
 desired ordering of any new pages; the order of existing entries will remain
 the same.
 
-## <a name="update-repository-list"></a>Update the repository list
+### <a name="update-repository-list"></a>Update the repository list
 
 You'll need to update the `repos:` list to reflect the GitHub
 repository that will contain your guide. The first of these repositories
@@ -77,19 +77,19 @@ repos:{% for i in site.repos %}
 {% endfor %}
 ```
 
-## <a name="set-back-link"></a>Optional: set the `back_link:` property
+### <a name="set-back-link"></a>Optional: set the `back_link:` property
 
 The `back_link:` property produces the _Read more 18F Guides_ link just under
 the title of the guide at the top of the page. If your document is not
 actually an 18F Guide, you may change this property to link to 18F Pages— or
 any other collection of documents to which your new "guide" actually belongs.
 
-## <a name="set-google-analytics"></a>Optional: update `google_analytics_ua:`
+### <a name="set-google-analytics"></a>Optional: update `google_analytics_ua:`
 
 The `google_analytics_ua:` property defaults to the Google Analytics account
 identifier for all 18F Pages sites. You can override it if you prefer.
 
-## Next steps
+### Next steps
 
 Once you're finished updating the config file, click the _GitHub Setup_
 entry in the table of contents.
