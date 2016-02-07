@@ -104,7 +104,7 @@ then you can ensure that sections formatted with the following markup only appea
 `pages.18f.gov`:
 
 <pre>
-{% raw %}{% if site.internal %}THIS TEXT WILL BE REDACTED FROM THE PUBLIC PRODUCTION AND STAGING STIES{% endif %}{% endraw %}
+{% raw %}{% if site.internal %}TEXT TO BE REDACTED FROM PUBLIC PRODUCTION + STAGING{% endif %}{% endraw %}
 </pre>
 
 For more details, see the [`18f-pages-server`
