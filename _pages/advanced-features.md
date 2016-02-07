@@ -99,12 +99,12 @@ will appear at `https://pages-internal.18f.gov/` as well as
 internal: true
 ```
 
-then you can ensure that sections such as the following only appear on
+then you can ensure that sections formatted with the following markup only appear on
 `pages-internal.18f.gov`, and are stripped out of the public-facing
 `pages.18f.gov`:
 
 <pre>
-{% raw %}{% if site.internal %}REDACTED TO PROTECT THE INNOCENT AND THEIR VICTIMS{% endif %}{% endraw %}
+{% raw %}{% if site.internal %}TEXT TO BE REDACTED FROM PUBLIC PRODUCTION + STAGING{% endif %}{% endraw %}
 </pre>
 
 For more details, see the [`18f-pages-server`
