@@ -1,3 +1,10 @@
+PATH
+  remote: ../jekyll_pages_api_search
+  specs:
+    jekyll_pages_api_search (0.4.3)
+      jekyll_pages_api (~> 0.1.4)
+      sass (~> 3.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,9 +36,6 @@ GEM
     jekyll_pages_api (0.1.5)
       htmlentities (~> 4.3)
       jekyll (>= 2.0, < 4.0)
-    jekyll_pages_api_search (0.4.1)
-      jekyll_pages_api (~> 0.1.4)
-      sass (~> 3.4)
     kramdown (1.9.0)
     liquid (3.0.6)
     listen (3.0.3)
@@ -53,6 +57,7 @@ DEPENDENCIES
   go_script
   guides_style_18f
   jekyll
+  jekyll_pages_api_search!
   redcarpet
   rouge
 
