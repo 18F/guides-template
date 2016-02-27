@@ -3,3 +3,5 @@ _site/
 .DS_store
 .*.swp
 .jekyll*
+.bundle/
+vendor/
