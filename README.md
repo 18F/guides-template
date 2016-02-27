@@ -1,5 +1,7 @@
 ## 18F Guides Template
 
+[![Build Status](https://travis-ci.org/18F/guides-template.svg?branch=18f-pages)](https://travis-ci.org/18F/guides-template)
+
 This is a skeleton repo containing the
 [CFPB/DOCter](https://github.com/CFPB/DOCter)-based
 [Jekyll](http://jekyllrb.com/) template for
