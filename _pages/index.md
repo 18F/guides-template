@@ -23,7 +23,7 @@ contents to begin the rest of the steps.
 
 ### Update an existing guide/document
 
-__Note: You only need to do this if your existing guide or document is not already
+__Note: You need to do this only if your existing guide or document is not already
 using the `guides_style_18f` gem or if it does not have an `18f-pages`
 branch.__
 
