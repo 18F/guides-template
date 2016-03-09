@@ -21,6 +21,6 @@ production it's `https://pages.18f.gov/guides-template{{page.url}}`.
 
 ### Change the `baseurl:` when serving locally
 
-If you you do change the `baseurl:` property in the `_config.yml` file,
+If you do change the `baseurl:` property in the `_config.yml` file,
 **remember to include the trailing '`/`' when serving locally**. The Jekyll
 built-in webserver doesn't redirect to it automatically.
