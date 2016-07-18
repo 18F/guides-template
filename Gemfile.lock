@@ -2,11 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorator (0.1)
-    ffi (1.9.10)
+    ffi (1.9.14)
     go_script (0.1.9)
       bundler (~> 1.10)
       safe_yaml (~> 1.0)
-    guides_style_18f (0.4.8)
+    guides_style_18f (0.4.9)
       jekyll
       jekyll_pages_api
       jekyll_pages_api_search
