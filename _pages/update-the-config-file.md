@@ -21,8 +21,10 @@ name: {{site.name}}
 ```
 
 ### <a name="add-collections"></a>Add defaults and collections
+
 We often use simple Markdown pages.
-```
+
+```yaml
 defaults:
   -
     scope:
