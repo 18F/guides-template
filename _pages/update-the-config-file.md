@@ -5,6 +5,7 @@ Work your way through these steps to update
 the `_config.yml` file — this configures the 18F style template for your specific guide:
 
 - [Set the guide name.](#set-name)
+- [Add defaults and collections.](#add-defaults-and-collections)
 - [Set the `exclude:` entries.](#set-exclude-entries)
 - [Register pages in the navigation bar.](#register-pages-in-nav-bar)
 - [Update the repository list.](#update-repository-list)
@@ -12,6 +13,29 @@ the `_config.yml` file — this configures the 18F style template for your speci
 - [Optional: Update `google_analytics_ua:`.](#set-google-analytics)
 
 ### <a name="set-name"></a>Set the guide name
+
+The `name:` property appears as the guide's overall title. For example:
+
+```yaml
+name: {{site.name}}
+```
+
+### <a name="add-collections"></a>Add defaults and collections
+We often use simple Markdown pages.
+```
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+```
 
 The `name:` property appears as the guide's overall title. For example:
 
