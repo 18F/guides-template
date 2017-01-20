@@ -27,8 +27,6 @@ Removing `:create_repo` command from the `./go` script.
 Removing old git repository.
 Creating a new git repository.
 Initialized empty Git repository in .../MY-NEW-GUIDE/.git/
-Creating 18f-pages branch.
-Switched to a new branch '18f-pages'
 Adding files for initial commit.
 All done! Run 'git commit' to create your first commit.
 ```
@@ -66,7 +64,7 @@ $ git remote add origin git@github.com:18F/MY-NEW-GUIDE.git
 # Otherwise:
 $ git remote add origin https://github.com/18F/MY-NEW-GUIDE.git
 
-$ git push -u origin 18f-pages
+$ git push -u origin master
 ```
 
 Note that you can update the description and add a website link to the
