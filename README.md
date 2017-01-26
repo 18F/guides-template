@@ -3,7 +3,7 @@
 This is a skeleton repo containing the
 [CFPB/DOCter](https://github.com/CFPB/DOCter)-based
 [Jekyll](http://jekyllrb.com/) template for
-[18F Guides](http://18f.github.io/guides/).
+[18F Guides](https://guides.18f.gov/).
 
 ### Getting started
 

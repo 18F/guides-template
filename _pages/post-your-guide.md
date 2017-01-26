@@ -53,7 +53,7 @@ If you have any difficulty adding your guide, don't hesitate to head over to the
 ### <a name="add-new-guide"></a>Add the new guide to 18F Guides
 
 You've reached the final step! Add an entry to the `navigation:` list of [18F
-Guides](http://18f.github.io/guides/) linking to your new guide. You can [use
+Guides](https://guides.18f.gov/) linking to your new guide. You can [use
 this link to edit the file directly in
 GitHub](https://github.com/18F/guides/edit/18f-pages/_config.yml):
 

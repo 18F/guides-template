@@ -12,7 +12,7 @@ both are available via [Homebrew](http://brew.sh/).
 
 Now within your documents, you can reference your images as outlined below and abiding by
 the advice in the [Accessibility
-Guide](http://18f.github.io/accessibility/images/).
+Guide](https://pages.18f.gov/accessibility/images/).
 
 If an image is in a separate directory:
 
