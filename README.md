@@ -3,7 +3,7 @@
 This is a skeleton repo containing the
 [CFPB/DOCter](https://github.com/CFPB/DOCter)-based
 [Jekyll](http://jekyllrb.com/) template for
-[18F Guides](http://18f.github.io/guides/).
+[18F Guides](https://guides.18f.gov/).
 
 ### Getting started
 
@@ -71,13 +71,6 @@ gems needed by the template, and launch a running instance on
 The Guides Template (either [running locally](http://localhost:4000) or the
 [published version](https://pages.18f.gov/guides-template/)) will walk you
 through the rest of the steps to edit and publish your guide.
-
-### Staging version (for 18F team members)
-
-In addition to the `18f-pages` branch, you can create an `18f-pages-staging`
-branch and changes to that branch will be published to
-`https://pages-staging.18f.gov/MY-NEW-GUIDE`, which is identical to
-`https://pages.18f.gov/` but provides authenticated access.
 
 ### Public domain
 
