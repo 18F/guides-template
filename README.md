@@ -9,17 +9,17 @@ This is a skeleton repo containing the
 
 #### Installing Ruby
 
-You will need [Ruby](https://www.ruby-lang.org) ( > version 2.1.5 ). To check
+You will need [Ruby](https://www.ruby-lang.org) ( > version 2.2.4 ). To check
 whether it's already installed on a UNIX-like system, open up a terminal
 window (e.g. Terminal on OS X) and type `ruby -v` at the command prompt. For
 example, you should see something similar to the following:
 
 ```shell
 $ ruby -v
-ruby 2.2.3p173 (2015-08-18 revision 51636) [x86_64-darwin14]
+ruby 2.2.4p230 (2015-12-16 revision 53155) [x86_64-darwin15]
 ```
 
-If the version number is less than 2.1.5, or instead you see something like:
+If the version number is less than 2.2.4, or instead you see something like:
 
 ```shell
 $ ruby -v
