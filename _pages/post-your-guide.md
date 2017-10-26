@@ -11,8 +11,7 @@ Pages](https://pages.18f.gov/) for your new guide:
 ### <a name="federalist"></a>Add the site to Federalist
 
 The first step is to add your guide to [Federalist](https://federalist.18f.gov/).
-Federalist will host your guide on [18F-pages](https://pages.18f.gov), and
-automatically re-build the guide in response to changes in its GitHub repository.
+Federalist will automatically re-build the guide in response to changes in its GitHub repository.
 
 To get started, navigate to [federalist.18f.gov](htttps://federalist.18f.gov)
 and login. After you've logged in, click the "Add Website" button.
@@ -22,7 +21,7 @@ and login. After you've logged in, click the "Add Website" button.
 On the next page, enter "18f" in the text field for the "Repository Owner's
 Name" and the name of your guide's GitHub repository in the text field for the
 "Repository's Name". It is important that you type "18f" with a lowercase "f",
-or Federalist will not publish the guide to 18F pages.
+or Federalist will not publish the guide.
 
 <img src="{{site.baseurl}}/images/federalist-add-repository.png" alt="Federalist's interface for adding a new site">
 
@@ -55,7 +54,7 @@ If you have any difficulty adding your guide, don't hesitate to head over to the
 You've reached the final step! Add an entry to the `navigation:` list of [18F
 Guides](https://guides.18f.gov/) linking to your new guide. You can [use
 this link to edit the file directly in
-GitHub](https://github.com/18F/guides/edit/18f-pages/_config.yml):
+GitHub](https://github.com/18F/guides/edit/master/_config.yml):
 
 <img src="{{site.baseurl}}/images/gh-add-guide.png" alt="Add the new guide to 18F Guides using the GitHub text editor">
 

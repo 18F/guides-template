@@ -5,7 +5,7 @@ To add new pages, create a
 [Markdown](http://daringfireball.net/projects/markdown/syntax) file in the
 `_pages/` directory of the repository. For example, the Markdown text for
 this page is
-[`_pages/new-page.md`](https://github.com/18F/guides-template/blob/18f-pages/_pages/add-a-new-page.md).
+[`_pages/new-page.md`](https://github.com/18F/guides-template/blob/master/_pages/add-a-new-page.md).
 
 The Markdown document begins with this [YAML front
 matter](http://jekyllrb.com/docs/frontmatter/):
@@ -19,7 +19,7 @@ title: {{ page.title }}
 For most pages this will suffice. The URL of the page will match the file path
 relative to the `_pages` directory, minus the `.md` extension. For example,
 the source for this page appears as
-[`{{ page.path }}`]({{ site.repos[0].url }}/tree/18f-pages/{{ page.path }}).
+[`{{ page.path }}`]({{ site.repos[0].url }}/tree/master/{{ page.path }}).
 
 For the home page of your guide, the front matter should contain a
 `permalink: /` entry like this:
