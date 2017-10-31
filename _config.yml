@@ -9,6 +9,8 @@ exclude:
 - go
 - vendor
 
+theme: guides_style_18f
+
 permalink: pretty
 highlighter: rouge
 incremental: true
@@ -66,7 +68,7 @@ repos:
   url: https://github.com/18F/guides-template
 
 back_link:
-  url: "https://pages.18f.gov/guides/"
+  url: https://guides.18f.gov/
   text: Read more 18F Guides
 
 google_analytics_ua: UA-48605964-19
@@ -80,7 +82,7 @@ defaults:
 - scope:
     path: ""
   values:
-    layout: "guides_style_18f_default"
+    layout: default
 
 # Configuration for jekyll_pages_api_search plugin gem.
 jekyll_pages_api_search:
